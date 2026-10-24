@@ -7,90 +7,6 @@
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='4' y='4' width='56' height='56' rx='8' fill='%23d97706'/%3E%3Crect x='8' y='8' width='48' height='48' rx='4' fill='%23f59e0b'/%3E%3Crect x='14' y='18' width='36' height='36' rx='2' fill='%23ffffff' transform='rotate(-4 32 36)'/%3E%3Cpath d='M20 28h24M20 35h24M20 42h16' stroke='%2394a3b8' stroke-width='3' stroke-linecap='round' transform='rotate(-4 32 36)'/%3E%3Ccircle cx='32' cy='14' r='4' fill='%23ef4444'/%3E%3Ccircle cx='31' cy='13' r='1.5' fill='%23fca5a5'/%3E%3C/svg%3E">
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    /* 何勝手にソースコード除いてんだよ！
-    もう逃げられないゾ！　見たきゃ見せてやるよ
-
-    ;;;;>><+?1zzOVTUAaJJ+(:;:;;;;>>>+1zOOVUYWXaJJ-:::::<1z>>11zOTUk&++-:(___ `__`` `````...........~..~~.~~.~~.~~~~~~~~.~~~~~~~~~~.~~.~~.~~.~~~~.~~~~.~~.~
-agJ+<;;;;>>>>>>><<+?+zTUUAgJ+<<;;>>>????1111zzVTBWa&+?>?+1zzzZz+j&xwWAJ+(-__```````...........~..~~.~~.~.~~.~.~~.~.~~..~~.~~.~~.~...~.....~....~~~..~.
-<<11zTTUXag&+<>;;;;;;;;;>>>>+zTY9XQ&J+>;;>>>>>??==uAQdWHkHHHggHgggggmmgggHm+.- ````........~....~...~..~.~.~..~.~...~~~.~~.~..~.~~.~..~~..~~~~....~..~
-;;;;;;;;<<<>1zTT9XaJ++<;;;;;;;>><>+<+1vT99Xa&xugggg@@@@@@@@@@@@@@@@@@@@@HHH@gHm.-_...........~..~..~..~..~.~.~..~.~~.~.~..~.~~~~.~.~.~..~.....~..~.~..
-AaJ&+;;;;;;;;;;;>>>>>?zTYUXaJ++<;;;;;;;>1OwWHH@@@@@@@@@@@H@HH@@@@@@@@@@@@@@@@@@@gHHWx--......~.~..~.~.~.~..~.~~~.~.~..~.~..~....~...~.~~..~.~.~~..~.~.
-+<<>+zTY9Xa+++<;;;;;;;;;;;<<+>+OTYUAa&+xwQWH@@@@@@@H@HH@@H@@HH@H@@@@@@@@@@H@@@@@@@ggmHkk._.......~..~..~..~.~...~..~.~.~.~.~.~.~..~.~..~.~.~....~..~.~
-;;;;;;;;>>>>>+zOTUUA&J+<:;;;;;;;;;>>>1jXH@@HH@H@H@HHH@H@HH@H@@@@@@@@H@H@H@@H@@@@@@@@ggHkWw_~...~..~..~..~~.~..~..~~.~..~..~.~.~.~~.~..~...~..~.~.~..~.
-UG&J++;;;;;;;;;;<<>>><>+OTY9G&J++<<>jgH@HHHH@HH@@H@@@H@@@@@@@@@@@@@@@@@@@@@@HH@@@@@@@@gHHkc_..~....~..~....~..~~...~..~.~.~....~...~~..~~..~.~~..~..~.
->>>><+zTT9Ua&J++;:;;;;;;;;;;<<>>+zTWg@@@H@HH@@@@@@@@H@@@@@@@@gH@@ggg@gHHqHg@@@@@gggg@@@@HHkc~....~...~...~..~...~~..~~.~.~~~.~..~....~..~.~....~..~.~.
-;>;;;;;;;;;<>><1OTYUGgJ++<;;;;;;;;j@@@@H@H@@HH@@@@H@@@@@@@ggggmHHHHHHHHWHbqHHHg@gggg@g@@@gHO_....~..~...~.~..~....~.....~...~.~~.~.~..~...~.~.~.~..~.~
-UXw&J+<;;;;;;;;;;;;>;;;>+?TYUXwgJ+d@@@H@H@H@@@H@H@M@@HmgmHHHkHWWXZXuuXUUWyWWHWHHHHggg@ggggHHc_..~..~..~..~..~..~.~.~.~~..~..~..~..~.~.~..~..~~..~.~...
-;;<<<>+zTY9UA&J++<;;;;;;;;;;>;;;1zH@@@@HH@HH@@@@@@ggHHHHbWWWWWXXwwrrwXuXXXXUZwXUWWHHmgmmqm@@H<~..~...~.~..~..~..~.~.~..~..~~.~..~..~.~..~..~..~..~.~.~
-;;;;;::;;;<<<>>>+zTYTXAgJ++;;;;<?W@@@H@H@H@@H@@@HHgHkHVWWXzvvwZtllttOOOtZOOllllOOwXWWkkmmmggHn_~....~..~~.~.~.~..~..~...~..~..~~.~...~.~.~..~..~..~.~.
-YUX&&+++<:;;;;;;;;;;;>>><>+zTYUUUW@H@@H@@@H@@H@@@ggkWyWuuXrttl===?=?zlz11???===l=lOwXWpHkqggHHx~.~.......~.~...~..~.~.~~.~..~...~.~.~..~..~~.~.~.~...~
-;<<>><><zTTTUGgJ++<:;;;;;;;;;>>>=d@@@@@@H@H@@@@@@gHbfVXXuzrtll==??1==z?==z<??===zllrr0XWpWH@HH$~..~.~.~.......~.~.~.~..~..~.~.~..~.~.~..~...~...~.~.~.
-;;;;;;;;;;;;;;;<>>+7TYUXa+J++;;<uX@@H@@H@@@@@@@@gHHbpfWZuzvrlll=======z=?<>>>>?>?zltrvvzUWWggH$_.....~..~.~.~..~.~..~..~.~.~.~.~..~..~~.~~.~..~~..~..~
-TT9Xa&J++<<:;;;;;:;;;;;<>>>>?zTTUH@@@@H@@@@@gggg@mkkWWyZZuzrOOOzll========z?????=zzOOrrvzuXHgH$_..~....~.~.~..~..~..~.~...~...~.~..~...~..~.~..~..~..~
-;;>;><>>>?7YYUXagJ++;;;;;;>;;;<>1XHH@@@@@@@@HHgmgmHHWXZZZZuzwwwwOlz=?<????????????>?=ltOrvXH@Ht_~.~.~.~..~...~..~..~..~.~.~.~..~.~..~~..~...~..~.~.~..
-;;;;;;;;;;;;>>>;>>>>z7TYUSA+J++<<ZH@@@@H@@@@mgmHHWXZZZZyyyXWWVWkyszzz1?>;;<<<<<<<~<>?zzzwrwHgKC~..........~...~..~.~.~...~..~.~.~.~..~..~.~.~~..~..~.~
-CTTUUa&J++<;;;;;;;;;;>;>>>>>>>+?O0H@@H@@@@@ggggHWZZuuZyyyWWWWWUWHHHHWXXwzz<(_--(++zwkXkWXykWH$~....~...~.~..~..~..~...~.~..~...~..~..~~..~.~.~..~.~.~~
->>>>;>>;;;17TTU0wa&+++;;;;;;>>;>>1H@@@@@ggHgg@mHyZZZZZZXUUZOO=zzOOOOOOwOl1??+?1zzwzXUUUUWWHWHC~.....~...~..~.~..~..~.~.~.~.~~.~.~~.~...~..~...~~.~.~..
-;;;;;;;;;;;;;;>;>;<>;+z7TY9Gag&++1WWXXHH@gggg@mWyZZZuuuzzvrtttz==??+zOtll=??==lttrOz11=ltrvXK~..~......~..~....~.~..~...~....~...~..~.~~.~.~~..~..~~..
-zOTYU0a&&+++;;;;;;;;;;;;>>>>>>;;+dWWZXwXWHHg@@HVyZZZZuzrrrrwAQQkkkXAzttl=?>>>=trOIzzzzzztOrd$_...~..~.....~...~..~...~..~.~~..~.~..~.~..~...~~..~...~~
-;;;;;><<<>>+z7TYUXa&J+++;;;;;;;>jXky0?VXvXWHgHHyyZZZZuwrOOVUUuHHHD+uWZz==1+?1zrOwWHWd0vWkytd>~....~..~.~...~...~..~.~.~..~..~.~..~..~...~.~..~~.~.~...
-+;;;;;;;;::;;;;;;;>>>>>+zTYYUXA&uXXu0vwwkXyWHpVyZZZZuuvtttllOtzzzzztl==lltO=zOzOOZUUUwZUUUtd>.~....~....~.......~..~...~...~..~..~..~.~.~~.~...~.~.~.~
-+zOVTTVu&++++<<;;;:;;;;;;;;>>>>>1wuOuUWUUyyWqWyZZZuuuzrOOlllllll=l==??lltttOlrrtzzzzOtllzttt:...~...~..~.~.~.~.~.~..~...~.~..~.~..~~...~..~.~...~..~..
-;;;;;;;;>>>;>+?7TYUXa+++++;;;;;;>zXwy0OOZwZWHVZZZZuuzvtl==1lllllll===?=lrrrtltrrll=1=z=lllttI~..~.~..~....~...~...~..~.~...~..~..~..~..~..~.~.~...~.~.
-++<:;:;;;;;;;;;;;;;;;;<<>+1C7YUXAswXUAzwzwXWWWZZZuzzzvttO??<===1=???<?zwzzwOzlOOZz====llllllO_.~....~..~.~..~...~..~..~..~..~..~..~..~..~....~.~.~...~
-<+1OTYYUAa&++++;;:;::;;;;;;;;;>;;<zWkwZUXkXVVyyyZZzzvvrrtz?><+??<;;>+yuwzrOz<<<ztz;<>+1=llltt>...~....~..~...~..~..~.~.~..~..~..~..~..~..~.~....~.~.~.
-;;:;;;;;<;;;<>+1OTYYUAa+J++<;;:;;;;?ZZ0OtwXfVyyZZZuzzzzvrll?<:;><<+zwXrOOOwOzzzzOOz><;>?==ltt:..~...~...~..~..~..~~..~.~.~.~..~..~..~..~..~.~~...~..~.
-+++;:::::::;;::;:;;;;<<;;>><17TYYUAaJXuwOtwfffyZZZZuuuzzrt=?<<>>><?zOVXXUUUWXkXHkwI??;;?==ttv.~..~...~..~..~.~..~..~..~...~.~..~..~..~..~..~..~.~..~..
->>+1CTTYUAw&+J++<<:;:;;:;;;;;;;;;>>>>>?TWWWHpWyZZZuuuzzzrtl=?>>?>>>?11tOtwVOz1OrOl?>>>>1=lzO!..~..~.~.~.~.~.~..~.~.~~..~.~..~.~.~..~..~.~..~..~~..~.~~
-::::;;;;;;;;<>>>+z7TYTUXA&++++<;;;;>>>;>jWWuXWVZZuuuuuzzrtl=z>>???=1lztOOrttOlwwwOzz???lllt>~.~~..~~~~~~~~~~~~~~~~~.~~~.~.~~.....~..~.~..~..~...~..~..
-a&JJ++<::;;;;;;;;;;;;>>>>>>;>>+1OTYYUws&&dXuybWyZZuuuuzvvrl=????zttOllOOOzzzOzzrwwrtz===zlZ<~~~~~~~~~~~::::_:::~~~~~~.~~..~..~~..~.~...~..~..~..~~.~..
->>>>><+17TYY9UwAg+J+++;;;;;;>>;>>>>??>>?+zyZyWpfyZuuuuzzvrl=1+1lOwwwwXXWVWyXXXXkkAzrOllllrI:::::::::;;>>>??>++<<;;:::~~~~~~.~.~.~..~.~..~..~.~~...~.~.
-:;;;:;;;;;;;;<<<<><><1zvTYY9UXAa&JJJ&+>>?+XWyWbpVyZZuuuuzrOz=1lwwZX0XXuXO=lll=zvXUUXOlllwZ+>>???????===lllllll=lz1+<;;;:::~~~~.~..~...~..~..~..~..~..~
-&J+++;:;;;;;;;;;:;;;;;;;;;;><<<+?>???zOTTUUVyyWkWWWyZZuuuzvO==1=lltOtrrvwwwOzzzrrOOOOllOvz=====llllllllllllltltltlllzz=1+<<::~~~~.~.~.~.~.~...~.~..~..
-;;;<<?zOTYTT0w&++++++<;><<;;;;;;;;;>>>>>>>zVyyWWHWffyyZuZuuvOz?==lttrttttOOwOOOOttttllOrI====ll=llllllltltltltlttlttttllzz1+<;:~~~.~.~...~..~~..~.~.~.
-;:;;;;;;;;>;>;>>;;><<?7TYYUUXAa&J&&+>>>>>?+XfyZVWkkbpVyyXuuuzOz?zzlrrtrttllltltrtrrltwOz=====llllllllllltlttlltlttttttttttllz+<<_~~.~..~~..~.~.~.~..~~
-+JJ++++<;>>>;>;;>>;>;>>>;;;;>>>>>>??1zOTUU0WVyyZyWHqkWpfWyXuuzOzzz?zlttOrrtttttrttltrZ1====l=l=lll=lllllltltlttttttttttttttttlz<:~~~.~..~.~.~...~.~...
-<<<;<>++zTYYYUVw&++J&++>>>>;>;;>>>>>>>>>>>?XfyyZZZXWWkkWpfWyZXXwwOz1zlOOvuXvwXzzwtOrZ==========ll=lllllltlltllttttttttttttrtttl?<:~~.~.~.~..~.~..~.~.~
-;;;;:;;;;;;;;;;>;>>>>>>+z7TYYUUXAa&+&&z&z+?dfVyZZZZuuUWHqHpWWVVXXXXwOrwXXXZZZXXXzwwZ?=?=====l=l=lllllllltlttlllltttttttrttttttlz<;_~~.~...~..~.~..~..~
-&&+J+++<<;;;;;;;;;;;;;;;;;;;;>;>>>>??1?1zOOWpfyyyZZuuuuuXWHqHWpppfXyXwwuwZXZWyyXXZ3=?======lllllll=llllltlltttltttttttttttrttttOz<<_~.~.~..~..~.~..~..
->>>;>>;<+17TTYU0ww&&+JJ++<<;;;;;;>>>>>>>>>1XpfVyyyZuuuuuuuuUWHHHWkbWWWWWVWVVXWWWUX?========l=llllllllltlttltltttttttttttttrrttttz<<_~..~.~.~.~..~.~.~~
-;;;;;;;;>>>>>>>>>>>>>><>>>1z7YYYUUX&gg&&&zdpffyyyZZuuuzuuZZZZXZWMMMNHHqHHHHHWUZXuX======llllllllllllllttltttttltttttttttttttttttO=><~~~...~..~.~..~..~
-vAa&+J++++>>>>>>>>>>>>>>>>>;;>>>?>?>>????ufppfyyyZZXuuuuuuuuZZXyXkXWHMMHWkXZyyZZZZ======lllllllllltttttttttttttttttttttrtrtttrtttz+;_~.~.~.~..~.~..~..
-;;<<<<<>>+1zOTTTTUUXw&ggJ&&+++>>>>>>>uQmdWpppfVyyZZZuXXXVZVZV0UU0VVVX0UUuXXUUUXZZZI==llllllllllltlttltttttttttttttttrtttttrtttrttl?;:~~.~.~.~..~.~~.~.
-;;;;;;;;;;;>>>>>>>>>>>?<><>>+1z7T4WWqqHgHHHWpWWyZuuzzrrttttlttllttttrrrvrvzvrvzzzXkll==llllllllttltlttlttttttttttttttrtrrttrtttttt=>:~~~...~.~..~..~~~
-uwAa&++J&+++>>>>>>>>>>>>>>>;;>>1jXmg@ggHqqgggggHHkQmAOOrtttttttlttltlttttrOrrvvzuuZAezlllllllltttttttttttttttttttrtrtttrtrtrrrtttl?>:~.~.~..~.~..~...~
-<;;>;<<?>>++1zOTTTUUUUwA&&&+gXkqkqqmqmHH@M@@HHHHmqHHmmmHmQyttttttltllllllllltrrvzuuzHHqmAAzlltlttttttttlttttttttttttttrttttttrtttzz<<~~.~.~..~.~.~~...
-;;;;;;;;;;;;;>+++&&AkXpppbbkkkkkkkqqqqqqqmmggg@gggg@HggmmmqmHmAOtttll===lllttrrvzzzuuHMMWpbmswOlttttttttttttttttttttttttttrtttttt=<<~~...~..~...~..~~.
-UUVO&&&&gQWWkkkWWkkkHbbkkkkkkkkqqqqqmmmmmmgmmmggmmgmgmggggmqqmmHHmAOtl===lllltttrvzzXXWHkkkqkkkWHHWmQQsyOltttttttttttttrtttrttrtl=>:~..~..~..~.....~.~
-OzdkqqkqqmmmqqqqqqqqqqqqqqqqqqkqqqqqqqmmmmmmmmmmmgmmmmmmmmgggmHqqqqqqHmAAwOttOOwAQWHqqqqqmqkkqkkkkbbbqHmggHmmQAwwOOtttttttttttttlz>:~~.....~..~.~.~...
-wWkqkkqqqqqqmqqqqqqqqqqqqqqqqqqqkqqqqqqqqmmmmqmmqqmmqqmqqqqqqqHHmggmqHqkHHHkmqqqqqqqqkkkkHHmqqqqkqqkkkkkqqqmggmqqkqkkWkAAsOtttttl?<_~.~.~..~...~....~.
-kkqqqqqqqqqqqqgmqqqqqqqqqkqqkkqkqqqqqqqqqmqqqqqqqqqqqqqqqqqqqqqqqqqqqqqmmmmmHHHHHHHmgHmqqqkkqkkkkkkkkkkkkkkkqHmggmmmqqqqqqkkkmytlz;:~~..~...~.~..~.~..
-qqqqqqqqqqqqqqqgggmmkqqqqqqqkqqqqmmmqqqqqqqqqqqkqkqqqqqqqqqqqqqmqqqqqqqqqqmmmmmqmmmmqqmmqqqqqqqkqqkkkkqkkqkkqkkkHHggmmmmqqqqqkkbky<<~~...~.~....~...~.
-qqqmmqqqqqqqqqqqgg@gmqqqqkqqqkqqmggmqqqqqmqqkqqqqqqqqqqqqqqqqqqqqqqqqqqmqqqqmmmmmmmqqqqqqqqqqqkqqkqkkkqkqkqkkqqqqqqqmmmqqqqqqmmqkkk<:~~.~..~.~.~..~..~
-mmmmmmqqqqqqqqqqqg@gmqqqqqkqmqkmmggqqqkqmqqqqqqqqqqqqqqqqqkqqqqqqqqqqqqqqqqqmmmqmqqqqqqqqqkqkqqkqkkkqqkkkkkkkkkkqqqqqqqqqqqqmmmmqkky~~~~~.~...~.~.~...
-mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqqqqqqqkqqqqqkqkqkkqqqkkkkqkkkkkkkbkkkmmmqqkkqgggggqqqn~~~.~.~~.~..~.~.~
-
-
-
-
-
-
-    ヌゥン！ヘッ！ヘッ！ア゛ア゛ア゛ア゛ァ゛ァ゛ァ゛ァ゛ア゛↑ア゛↑ア゛↑ア゛↑ア゛ア゛ア゛ァ゛ァ゛ァ゛ァ゛！！！！ウ゛ア゛ア゛ア゛ア゛ア゛ア゛ァ゛ァ゛ァ゛ァ゛ァ゛ァ゛ァ！！！！！フ ウ゛ウ゛ウ゛ゥ゛ゥ゛ゥ゛ン！！！！フ ウ゛ゥ゛ゥ゛ゥン！！！！(大迫真)
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    */
-    /* ===== 既存スタイル（変更なし） ===== */
     .threads-scroll { max-height: 480px; overflow-y: auto; scrollbar-width: thin; }
     .post-number { font-weight: 700; color: #991b1b; }
     .post-author { color: #15803d; font-weight: 600; }
@@ -113,435 +29,136 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
       transition: transform 0.3s; transform: translateY(-100%);
     }
     #statusBanner.show { transform: translateY(0); }
-    .admin-badge {
-      background: #7c2d12; color: #fff; font-size: 10px; padding: 2px 6px;
-      border-radius: 4px; margin-left: 6px;
-    }
-    .owner-badge {
-      background: #1e40af; color: #fff; font-size: 10px; padding: 2px 6px;
-      border-radius: 4px; margin-left: 6px;
-    }
-    .vip-badge {
-      background: #7c3aed; color: #fff; font-size: 10px; padding: 2px 6px;
-      border-radius: 4px; margin-left: 6px;
-    }
-    .op-badge {
-      background: #b45309; color: #fff; font-size: 10px; padding: 2px 6px;
-      border-radius: 4px; margin-left: 4px; font-weight: 700;
-    }
-    .role-post-badge {
-      color: #fff; font-size: 10px; padding: 2px 6px;
-      border-radius: 4px; margin-left: 4px; font-weight: 700;
-    }
+    .admin-badge { background: #7c2d12; color: #fff; font-size: 10px; padding: 2px 6px; border-radius: 4px; margin-left: 6px; }
+    .owner-badge { background: #1e40af; color: #fff; font-size: 10px; padding: 2px 6px; border-radius: 4px; margin-left: 6px; }
+    .vip-badge { background: #7c3aed; color: #fff; font-size: 10px; padding: 2px 6px; border-radius: 4px; margin-left: 6px; }
+    .op-badge { background: #b45309; color: #fff; font-size: 10px; padding: 2px 6px; border-radius: 4px; margin-left: 4px; font-weight: 700; }
+    .role-post-badge { color: #fff; font-size: 10px; padding: 2px 6px; border-radius: 4px; margin-left: 4px; font-weight: 700; }
     .role-post-badge.admin { background: #7c2d12; }
     .role-post-badge.owner { background: #1e40af; }
     .role-post-badge.vip   { background: #7c3aed; }
-    .custom-badge {
-      color: #fff; font-size: 10px; padding: 2px 6px;
-      border-radius: 4px; margin-left: 4px; font-weight: 700;
-      display: inline-block;
-    }
-    .admin-email {
-      background: #fef3c7; color: #92400e; font-size: 11px; padding: 2px 6px;
-      border-radius: 4px; font-family: monospace;
-    }
-    .delete-btn {
-      background: #dc2626; color: #fff; font-size: 11px; padding: 3px 10px;
-      border-radius: 4px; cursor: pointer; border: none;
-    }
+    .custom-badge { color: #fff; font-size: 10px; padding: 2px 6px; border-radius: 4px; margin-left: 4px; font-weight: 700; display: inline-block; }
+    .admin-email { background: #fef3c7; color: #92400e; font-size: 11px; padding: 2px 6px; border-radius: 4px; font-family: monospace; }
+    .delete-btn { background: #dc2626; color: #fff; font-size: 11px; padding: 3px 10px; border-radius: 4px; cursor: pointer; border: none; }
     .delete-btn:hover { background: #b91c1c; }
     .delete-btn:disabled { background: #9ca3af; cursor: not-allowed; }
-    .reply-btn {
-      background: #2563eb; color: #fff; font-size: 11px; padding: 3px 10px;
-      border-radius: 4px; cursor: pointer; border: none;
-    }
+    .reply-btn { background: #2563eb; color: #fff; font-size: 11px; padding: 3px 10px; border-radius: 4px; cursor: pointer; border: none; }
     .reply-btn:hover { background: #1d4ed8; }
-    .badge-manage-btn {
-      background: #a16207; color: #fff; font-size: 11px; padding: 3px 10px;
-      border-radius: 4px; cursor: pointer; border: none;
-    }
+    .badge-manage-btn { background: #a16207; color: #fff; font-size: 11px; padding: 3px 10px; border-radius: 4px; cursor: pointer; border: none; }
     .badge-manage-btn:hover { background: #854d0e; }
-    .ban-btn {
-      background: #111827; color: #fff; font-size: 11px; padding: 3px 10px;
-      border-radius: 4px; cursor: pointer; border: none;
-    }
+    .ban-btn { background: #111827; color: #fff; font-size: 11px; padding: 3px 10px; border-radius: 4px; cursor: pointer; border: none; }
     .ban-btn:hover { background: #374151; }
-    .banned-mark {
-      background: #991b1b; color: #fff; font-size: 10px; padding: 2px 6px;
-      border-radius: 4px; margin-left: 4px; font-weight: 700;
-    }
-    .reply-cancel-btn {
-      background: #6b7280; color: #fff; font-size: 11px; padding: 3px 10px;
-      border-radius: 4px; cursor: pointer; border: none;
-    }
+    .banned-mark { background: #991b1b; color: #fff; font-size: 10px; padding: 2px 6px; border-radius: 4px; margin-left: 4px; font-weight: 700; }
+    .reply-cancel-btn { background: #6b7280; color: #fff; font-size: 11px; padding: 3px 10px; border-radius: 4px; cursor: pointer; border: none; }
     .reply-cancel-btn:hover { background: #4b5563; }
-    .backup-btn {
-      background: #059669; color: #fff; font-size: 11px; padding: 6px 12px;
-      border-radius: 4px; cursor: pointer; border: none; font-weight: 600;
-    }
+    .backup-btn { background: #059669; color: #fff; font-size: 11px; padding: 6px 12px; border-radius: 4px; cursor: pointer; border: none; font-weight: 600; }
     .backup-btn:hover { background: #047857; }
-    .restore-btn {
-      background: #0891b2; color: #fff; font-size: 11px; padding: 6px 12px;
-      border-radius: 4px; cursor: pointer; border: none; font-weight: 600;
-    }
+    .restore-btn { background: #0891b2; color: #fff; font-size: 11px; padding: 6px 12px; border-radius: 4px; cursor: pointer; border: none; font-weight: 600; }
     .restore-btn:hover { background: #0e7490; }
-    .banlist-btn {
-      background: #7f1d1d; color: #fff; font-size: 11px; padding: 6px 12px;
-      border-radius: 4px; cursor: pointer; border: none; font-weight: 600;
-    }
+    .banlist-btn { background: #7f1d1d; color: #fff; font-size: 11px; padding: 6px 12px; border-radius: 4px; cursor: pointer; border: none; font-weight: 600; }
     .banlist-btn:hover { background: #991b1b; }
-    .userlist-btn {
-      background: #0369a1; color: #fff; font-size: 11px; padding: 6px 12px;
-      border-radius: 4px; cursor: pointer; border: none; font-weight: 600;
-    }
+    .userlist-btn { background: #0369a1; color: #fff; font-size: 11px; padding: 6px 12px; border-radius: 4px; cursor: pointer; border: none; font-weight: 600; }
     .userlist-btn:hover { background: #075985; }
-    .pending-btn {
-      background: #b45309; color: #fff; font-size: 11px; padding: 6px 12px;
-      border-radius: 4px; cursor: pointer; border: none; font-weight: 700;
-      position: relative;
-    }
+    .pending-btn { background: #b45309; color: #fff; font-size: 11px; padding: 6px 12px; border-radius: 4px; cursor: pointer; border: none; font-weight: 700; position: relative; }
     .pending-btn:hover { background: #92400e; }
-    .pending-btn.has-pending {
-      background: #dc2626;
-      animation: pulseRed 1.5s infinite;
-    }
-    @keyframes pulseRed {
-      0%, 100% { box-shadow: 0 0 0 0 rgba(220,38,38,0.7); }
-      50% { box-shadow: 0 0 0 8px rgba(220,38,38,0); }
-    }
-    .publish-btn {
-      background: #7c3aed; color: #fff; font-size: 11px; padding: 6px 12px;
-      border-radius: 4px; cursor: pointer; border: none; font-weight: 700;
-    }
+    .pending-btn.has-pending { background: #dc2626; animation: pulseRed 1.5s infinite; }
+    @keyframes pulseRed { 0%, 100% { box-shadow: 0 0 0 0 rgba(220,38,38,0.7); } 50% { box-shadow: 0 0 0 8px rgba(220,38,38,0); } }
+    .publish-btn { background: #7c3aed; color: #fff; font-size: 11px; padding: 6px 12px; border-radius: 4px; cursor: pointer; border: none; font-weight: 700; }
     .publish-btn:hover { background: #6d28d9; }
-    .publish-btn.unpublished {
-      background: #16a34a;
-    }
+    .publish-btn.unpublished { background: #16a34a; }
     .publish-btn.unpublished:hover { background: #15803d; }
-
-    .lockdown-btn {
-      background: #7f1d1d; color: #fff; font-size: 11px; padding: 6px 14px;
-      border-radius: 4px; cursor: pointer; border: 2px solid #fbbf24;
-      font-weight: 900; letter-spacing: 0.05em;
-      animation: pulseDark 1.8s infinite;
-    }
+    .lockdown-btn { background: #7f1d1d; color: #fff; font-size: 11px; padding: 6px 14px; border-radius: 4px; cursor: pointer; border: 2px solid #fbbf24; font-weight: 900; letter-spacing: 0.05em; animation: pulseDark 1.8s infinite; }
     .lockdown-btn:hover { background: #991b1b; }
-    .lockdown-btn.active {
-      background: #dc2626;
-      border-color: #fef2f2;
-      animation: pulseRed 1.2s infinite;
-    }
-    @keyframes pulseDark {
-      0%, 100% { box-shadow: 0 0 0 0 rgba(251,191,36,0.6); }
-      50% { box-shadow: 0 0 0 6px rgba(251,191,36,0); }
-    }
-
-    .alarm-btn {
-      background: #b91c1c; color: #fff; font-size: 11px; padding: 6px 14px;
-      border-radius: 4px; cursor: pointer; border: 2px solid #fde047;
-      font-weight: 900; letter-spacing: 0.05em;
-    }
+    .lockdown-btn.active { background: #dc2626; border-color: #fef2f2; animation: pulseRed 1.2s infinite; }
+    @keyframes pulseDark { 0%, 100% { box-shadow: 0 0 0 0 rgba(251,191,36,0.6); } 50% { box-shadow: 0 0 0 6px rgba(251,191,36,0); } }
+    .alarm-btn { background: #b91c1c; color: #fff; font-size: 11px; padding: 6px 14px; border-radius: 4px; cursor: pointer; border: 2px solid #fde047; font-weight: 900; letter-spacing: 0.05em; }
     .alarm-btn:hover { background: #dc2626; }
-    .alarm-btn.active {
-      background: #7c2d12;
-      border-color: #fca5a5;
-      animation: pulseRed 1.2s infinite;
-    }
+    .alarm-btn.active { background: #7c2d12; border-color: #fca5a5; animation: pulseRed 1.2s infinite; }
 
-    /* ===== 手動警報トースト（画面右上） ===== */
     #alarmToast {
-      position: fixed;
-      top: 16px;
-      right: 16px;
-      z-index: 99999;
-      max-width: 380px;
-      min-width: 280px;
+      position: fixed; top: 16px; right: 16px; z-index: 99999;
+      max-width: 380px; min-width: 280px;
       background: linear-gradient(135deg, #7f1d1d 0%, #b91c1c 100%);
-      border: 3px solid #fde047;
-      border-radius: 10px;
+      border: 3px solid #fde047; border-radius: 10px;
       box-shadow: 0 8px 24px rgba(0,0,0,0.5), 0 0 30px rgba(220,38,38,0.6);
-      color: #fff;
-      font-family: sans-serif;
-      padding: 14px 16px;
+      color: #fff; font-family: sans-serif; padding: 14px 16px;
       display: none;
       animation: alarmToastSlide 0.4s ease-out, alarmToastPulse 1.8s infinite;
       pointer-events: auto;
     }
     #alarmToast.show { display: block; }
-    @keyframes alarmToastSlide {
-      from { transform: translateX(120%); opacity: 0; }
-      to { transform: translateX(0); opacity: 1; }
-    }
-    @keyframes alarmToastPulse {
-      0%, 100% { box-shadow: 0 8px 24px rgba(0,0,0,0.5), 0 0 30px rgba(220,38,38,0.6); }
-      50% { box-shadow: 0 8px 24px rgba(0,0,0,0.5), 0 0 45px rgba(253,224,71,0.8); }
-    }
-    #alarmToast .alarm-toast-head {
-      display: flex; align-items: center; gap: 8px;
-      margin-bottom: 8px;
-      border-bottom: 1px solid rgba(253,224,71,0.4);
-      padding-bottom: 6px;
-    }
-    #alarmToast .alarm-toast-icon {
-      font-size: 24px;
-      animation: alarmIconShake 0.6s infinite;
-      filter: drop-shadow(0 0 8px #fde047);
-    }
-    @keyframes alarmIconShake {
-      0%, 100% { transform: rotate(-12deg); }
-      50% { transform: rotate(12deg); }
-    }
-    #alarmToast .alarm-toast-title {
-      font-size: 15px; font-weight: 900;
-      letter-spacing: 0.1em;
-      color: #fde047;
-      text-shadow: 0 0 10px rgba(253,224,71,0.8);
-    }
-    #alarmToast .alarm-toast-body {
-      font-size: 12px;
-      line-height: 1.6;
-    }
-    #alarmToast .alarm-toast-body .row {
-      display: flex; gap: 6px;
-      margin-bottom: 4px;
-    }
-    #alarmToast .alarm-toast-body .label {
-      color: #fde047; font-weight: 700;
-      white-space: nowrap;
-    }
-    #alarmToast .alarm-toast-body .value {
-      color: #fff;
-      word-break: break-word;
-    }
-    #alarmToast .alarm-toast-footer {
-      margin-top: 8px;
-      font-size: 10px;
-      color: #fecaca;
-      font-family: monospace;
-      text-align: right;
-      opacity: 0.8;
-    }
+    @keyframes alarmToastSlide { from { transform: translateX(120%); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
+    @keyframes alarmToastPulse { 0%, 100% { box-shadow: 0 8px 24px rgba(0,0,0,0.5), 0 0 30px rgba(220,38,38,0.6); } 50% { box-shadow: 0 8px 24px rgba(0,0,0,0.5), 0 0 45px rgba(253,224,71,0.8); } }
+    #alarmToast .alarm-toast-head { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; border-bottom: 1px solid rgba(253,224,71,0.4); padding-bottom: 6px; }
+    #alarmToast .alarm-toast-icon { font-size: 24px; animation: alarmIconShake 0.6s infinite; filter: drop-shadow(0 0 8px #fde047); }
+    @keyframes alarmIconShake { 0%, 100% { transform: rotate(-12deg); } 50% { transform: rotate(12deg); } }
+    #alarmToast .alarm-toast-title { font-size: 15px; font-weight: 900; letter-spacing: 0.1em; color: #fde047; text-shadow: 0 0 10px rgba(253,224,71,0.8); }
+    #alarmToast .alarm-toast-body { font-size: 12px; line-height: 1.6; }
+    #alarmToast .alarm-toast-body .row { display: flex; gap: 6px; margin-bottom: 4px; }
+    #alarmToast .alarm-toast-body .label { color: #fde047; font-weight: 700; white-space: nowrap; }
+    #alarmToast .alarm-toast-body .value { color: #fff; word-break: break-word; }
+    #alarmToast .alarm-toast-footer { margin-top: 8px; font-size: 10px; color: #fecaca; font-family: monospace; text-align: right; opacity: 0.8; }
 
-    .post-card {
-      background: #fff;
-      border: 1px solid #d1d5db;
-      border-radius: 6px;
-      padding: 12px;
-      box-shadow: 0 1px 2px rgba(0,0,0,0.05);
-    }
-    .post-card.banned-post {
-      opacity: 0.5;
-      border-left: 3px solid #111827;
-    }
-    .post-children {
-      margin-left: 20px;
-      padding-left: 12px;
-      border-left: 2px solid #fbbf24;
-      margin-top: 8px;
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-    }
+    .post-card { background: #fff; border: 1px solid #d1d5db; border-radius: 6px; padding: 12px; box-shadow: 0 1px 2px rgba(0,0,0,0.05); }
+    .post-card.banned-post { opacity: 0.5; border-left: 3px solid #111827; }
+    .post-children { margin-left: 20px; padding-left: 12px; border-left: 2px solid #fbbf24; margin-top: 8px; display: flex; flex-direction: column; gap: 8px; }
     .post-tree { display: flex; flex-direction: column; gap: 8px; }
-    .inline-reply-box {
-      margin-top: 8px;
-      padding: 10px;
-      background: #fffbeb;
-      border: 1px dashed #fbbf24;
-      border-radius: 6px;
-    }
-    .inline-reply-box textarea {
-      width: 100%;
-      border: 1px solid #d1d5db;
-      border-radius: 4px;
-      padding: 6px;
-      font-size: 13px;
-      outline: none;
-      resize: vertical;
-      min-height: 60px;
-    }
-    .inline-reply-box textarea:focus {
-      border-color: #ef4444;
-      box-shadow: 0 0 0 2px rgba(239,68,68,0.15);
-    }
-    .reply-target-label {
-      font-size: 11px;
-      color: #92400e;
-      background: #fef3c7;
-      padding: 2px 8px;
-      border-radius: 4px;
-      display: inline-block;
-      margin-bottom: 6px;
-    }
-    .post-file {
-      margin-top: 8px;
-      padding: 8px;
-      border: 1px solid #e5e7eb;
-      background: #f9fafb;
-      border-radius: 6px;
-    }
-    .post-file img {
-      max-height: 320px;
-      max-width: 100%;
-      border-radius: 4px;
-      border: 1px solid #e5e7eb;
-      display: block;
-      margin-bottom: 4px;
-    }
-    .post-file a {
-      font-size: 12px;
-      color: #2563eb;
-      text-decoration: underline;
-      word-break: break-all;
-    }
-    input[type="file"]::file-selector-button {
-      background-color: #e5e7eb;
-      border: 1px solid #d1d5db;
-      border-radius: 0.375rem;
-      padding: 0.25rem 0.75rem;
-      font-size: 0.75rem;
-      margin-right: 0.5rem;
-      cursor: pointer;
-    }
+    .inline-reply-box { margin-top: 8px; padding: 10px; background: #fffbeb; border: 1px dashed #fbbf24; border-radius: 6px; }
+    .inline-reply-box textarea { width: 100%; border: 1px solid #d1d5db; border-radius: 4px; padding: 6px; font-size: 13px; outline: none; resize: vertical; min-height: 60px; }
+    .inline-reply-box textarea:focus { border-color: #ef4444; box-shadow: 0 0 0 2px rgba(239,68,68,0.15); }
+    .reply-target-label { font-size: 11px; color: #92400e; background: #fef3c7; padding: 2px 8px; border-radius: 4px; display: inline-block; margin-bottom: 6px; }
+    .post-file { margin-top: 8px; padding: 8px; border: 1px solid #e5e7eb; background: #f9fafb; border-radius: 6px; }
+    .post-file img { max-height: 320px; max-width: 100%; border-radius: 4px; border: 1px solid #e5e7eb; display: block; margin-bottom: 4px; }
+    .post-file a { font-size: 12px; color: #2563eb; text-decoration: underline; word-break: break-all; }
+    input[type="file"]::file-selector-button { background-color: #e5e7eb; border: 1px solid #d1d5db; border-radius: 0.375rem; padding: 0.25rem 0.75rem; font-size: 0.75rem; margin-right: 0.5rem; cursor: pointer; }
     input[type="file"]::file-selector-button:hover { background-color: #d1d5db; }
-    .preview-box {
-      margin-top: 8px;
-      padding: 8px;
-      border: 1px dashed #cbd5e1;
-      border-radius: 6px;
-      background: #f8fafc;
-      display: none;
-    }
+    .preview-box { margin-top: 8px; padding: 8px; border: 1px dashed #cbd5e1; border-radius: 6px; background: #f8fafc; display: none; }
     .preview-box.show { display: block; }
     .preview-box img { max-height: 160px; border-radius: 4px; }
     .preview-info { font-size: 11px; color: #64748b; margin-top: 4px; }
-    .badge-toggle-wrap {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      font-size: 11px;
-      color: #374151;
-      margin-left: 6px;
-      background: #f3f4f6;
-      padding: 3px 8px;
-      border-radius: 4px;
-      border: 1px solid #e5e7eb;
-      cursor: pointer;
-      user-select: none;
-    }
+    .badge-toggle-wrap { display: inline-flex; align-items: center; gap: 6px; font-size: 11px; color: #374151; margin-left: 6px; background: #f3f4f6; padding: 3px 8px; border-radius: 4px; border: 1px solid #e5e7eb; cursor: pointer; user-select: none; }
     .badge-toggle-wrap input { cursor: pointer; }
 
-    .modal-backdrop {
-      position: fixed; inset: 0; background: rgba(0,0,0,0.55);
-      display: flex; align-items: center; justify-content: center;
-      z-index: 10000; padding: 16px;
-    }
+    .modal-backdrop { position: fixed; inset: 0; background: rgba(0,0,0,0.55); display: flex; align-items: center; justify-content: center; z-index: 10000; padding: 16px; }
     .modal-backdrop.hidden { display: none; }
-    .modal-content {
-      background: #fff; border-radius: 8px; padding: 20px;
-      max-width: 560px; width: 100%; box-shadow: 0 8px 24px rgba(0,0,0,0.2);
-      max-height: 90vh; overflow-y: auto;
-    }
-    .color-swatch-row {
-      display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px;
-    }
-    .color-swatch {
-      width: 28px; height: 28px; border-radius: 6px; cursor: pointer;
-      border: 2px solid transparent;
-    }
-    .color-swatch.selected {
-      border-color: #111827;
-      box-shadow: 0 0 0 2px #fff inset;
-    }
-    .badge-list-item {
-      display: flex; align-items: center; gap: 8px;
-      padding: 8px; border: 1px solid #e5e7eb; border-radius: 6px;
-      background: #f9fafb; margin-bottom: 6px;
-    }
+    .modal-content { background: #fff; border-radius: 8px; padding: 20px; max-width: 560px; width: 100%; box-shadow: 0 8px 24px rgba(0,0,0,0.2); max-height: 90vh; overflow-y: auto; }
+    .color-swatch-row { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+    .color-swatch { width: 28px; height: 28px; border-radius: 6px; cursor: pointer; border: 2px solid transparent; }
+    .color-swatch.selected { border-color: #111827; box-shadow: 0 0 0 2px #fff inset; }
+    .badge-list-item { display: flex; align-items: center; gap: 8px; padding: 8px; border: 1px solid #e5e7eb; border-radius: 6px; background: #f9fafb; margin-bottom: 6px; }
     .badge-list-item .badge-chip-wrap { flex: 1; min-width: 0; }
-    .badge-list-item .btn-mini {
-      font-size: 11px; padding: 3px 8px; border-radius: 4px;
-      border: none; cursor: pointer; color: #fff;
-    }
+    .badge-list-item .btn-mini { font-size: 11px; padding: 3px 8px; border-radius: 4px; border: none; cursor: pointer; color: #fff; }
     .badge-list-item .btn-edit { background: #2563eb; }
     .badge-list-item .btn-edit:hover { background: #1d4ed8; }
     .badge-list-item .btn-del { background: #dc2626; }
     .badge-list-item .btn-del:hover { background: #b91c1c; }
-    .add-badge-btn {
-      background: #16a34a; color: #fff; font-size: 12px;
-      padding: 6px 12px; border-radius: 4px; border: none; cursor: pointer;
-      font-weight: 600;
-    }
+    .add-badge-btn { background: #16a34a; color: #fff; font-size: 12px; padding: 6px 12px; border-radius: 4px; border: none; cursor: pointer; font-weight: 600; }
     .add-badge-btn:hover { background: #15803d; }
-    .editor-box {
-      border: 1px solid #fbbf24; background: #fffbeb;
-      border-radius: 6px; padding: 12px; margin-top: 10px;
-    }
+    .editor-box { border: 1px solid #fbbf24; background: #fffbeb; border-radius: 6px; padding: 12px; margin-top: 10px; }
     .editor-box.hidden { display: none; }
 
-    .ban-list-row {
-      display: flex; align-items: center; gap: 8px;
-      padding: 10px; border: 1px solid #fecaca; border-radius: 6px;
-      background: #fef2f2; margin-bottom: 6px;
-      font-size: 12px;
-    }
+    .ban-list-row { display: flex; align-items: center; gap: 8px; padding: 10px; border: 1px solid #fecaca; border-radius: 6px; background: #fef2f2; margin-bottom: 6px; font-size: 12px; }
     .ban-list-row .info { flex: 1; min-width: 0; }
-    .ban-list-row .info .email-line {
-      font-family: monospace; font-size: 11px;
-      color: #991b1b; word-break: break-all;
-    }
-    .ban-list-row .info .meta-line {
-      font-size: 10px; color: #6b7280; margin-top: 2px;
-      word-break: break-all;
-    }
-    .ban-list-row .unban-btn {
-      background: #16a34a; color: #fff; font-size: 11px;
-      padding: 4px 10px; border-radius: 4px; border: none;
-      cursor: pointer; white-space: nowrap;
-    }
+    .ban-list-row .info .email-line { font-family: monospace; font-size: 11px; color: #991b1b; word-break: break-all; }
+    .ban-list-row .info .meta-line { font-size: 10px; color: #6b7280; margin-top: 2px; word-break: break-all; }
+    .ban-list-row .unban-btn { background: #16a34a; color: #fff; font-size: 11px; padding: 4px 10px; border-radius: 4px; border: none; cursor: pointer; white-space: nowrap; }
     .ban-list-row .unban-btn:hover { background: #15803d; }
 
-    .user-row {
-      display: flex; align-items: center; gap: 8px;
-      padding: 10px; border: 1px solid #e5e7eb; border-radius: 6px;
-      background: #f9fafb; margin-bottom: 6px; font-size: 12px;
-    }
+    .user-row { display: flex; align-items: center; gap: 8px; padding: 10px; border: 1px solid #e5e7eb; border-radius: 6px; background: #f9fafb; margin-bottom: 6px; font-size: 12px; }
     .user-row .info { flex: 1; min-width: 0; }
-    .user-row .email-line {
-      font-family: monospace; font-size: 12px;
-      color: #1e40af; word-break: break-all; font-weight: 600;
-    }
-    .user-row .nickname-line {
-      font-size: 12px; margin-top: 2px;
-      color: #1d4ed8; font-weight: 700;
-      word-break: break-all;
-    }
-    .user-row .nickname-line .nickname-value {
-      background: #dbeafe; color: #1e3a8a;
-      padding: 1px 6px; border-radius: 4px;
-      display: inline-block;
-    }
-    .user-row .nickname-line .nickname-empty {
-      color: #9ca3af; font-weight: 400;
-    }
-    .user-row .meta-line {
-      font-size: 10px; color: #6b7280; margin-top: 2px;
-      word-break: break-all;
-    }
-    .user-row .role-tag {
-      font-size: 10px; padding: 2px 6px; border-radius: 4px;
-      color: #fff; font-weight: 700;
-    }
+    .user-row .email-line { font-family: monospace; font-size: 12px; color: #1e40af; word-break: break-all; font-weight: 600; }
+    .user-row .nickname-line { font-size: 12px; margin-top: 2px; color: #1d4ed8; font-weight: 700; word-break: break-all; }
+    .user-row .nickname-line .nickname-value { background: #dbeafe; color: #1e3a8a; padding: 1px 6px; border-radius: 4px; display: inline-block; }
+    .user-row .nickname-line .nickname-empty { color: #9ca3af; font-weight: 400; }
+    .user-row .meta-line { font-size: 10px; color: #6b7280; margin-top: 2px; word-break: break-all; }
+    .user-row .role-tag { font-size: 10px; padding: 2px 6px; border-radius: 4px; color: #fff; font-weight: 700; }
     .user-row .role-tag.admin { background: #7c2d12; }
     .user-row .role-tag.owner { background: #1e40af; }
     .user-row .role-tag.vip   { background: #7c3aed; }
     .user-row .role-tag.none  { background: #6b7280; }
     .user-row .role-tag.banned { background: #991b1b; }
     .user-row .action-btns { display: flex; gap: 4px; flex-wrap: wrap; justify-content: flex-end; max-width: 220px; }
-    .user-row .btn-mini {
-      font-size: 10px; padding: 3px 8px; border-radius: 4px;
-      border: none; cursor: pointer; color: #fff; white-space: nowrap;
-    }
+    .user-row .btn-mini { font-size: 10px; padding: 3px 8px; border-radius: 4px; border: none; cursor: pointer; color: #fff; white-space: nowrap; }
     .user-row .btn-ban { background: #111827; }
     .user-row .btn-ban:hover { background: #374151; }
     .user-row .btn-unban { background: #16a34a; }
@@ -551,370 +168,108 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
     .user-row .btn-nickname { background: #1d4ed8; }
     .user-row .btn-nickname:hover { background: #1e3a8a; }
 
-    .user-search-input {
-      width: 100%; border: 1px solid #d1d5db; padding: 8px;
-      border-radius: 6px; font-size: 13px; margin-bottom: 10px;
-      outline: none;
-    }
-    .user-search-input:focus {
-      border-color: #0369a1;
-      box-shadow: 0 0 0 2px rgba(3,105,161,0.15);
-    }
+    .user-search-input { width: 100%; border: 1px solid #d1d5db; padding: 8px; border-radius: 6px; font-size: 13px; margin-bottom: 10px; outline: none; }
+    .user-search-input:focus { border-color: #0369a1; box-shadow: 0 0 0 2px rgba(3,105,161,0.15); }
 
-    .pending-row {
-      display: flex; align-items: center; gap: 8px;
-      padding: 10px; border: 1px solid #fcd34d; border-radius: 6px;
-      background: #fffbeb; margin-bottom: 6px; font-size: 12px;
-    }
+    .pending-row { display: flex; align-items: center; gap: 8px; padding: 10px; border: 1px solid #fcd34d; border-radius: 6px; background: #fffbeb; margin-bottom: 6px; font-size: 12px; }
     .pending-row .info { flex: 1; min-width: 0; }
-    .pending-row .email-line {
-      font-family: monospace; font-size: 12px;
-      color: #92400e; word-break: break-all; font-weight: 700;
-    }
-    .pending-row .meta-line {
-      font-size: 10px; color: #6b7280; margin-top: 2px;
-      word-break: break-all;
-    }
-    .pending-row .approve-btn {
-      background: #16a34a; color: #fff; font-size: 11px;
-      padding: 4px 10px; border-radius: 4px; border: none;
-      cursor: pointer; white-space: nowrap; font-weight: 700;
-    }
+    .pending-row .email-line { font-family: monospace; font-size: 12px; color: #92400e; word-break: break-all; font-weight: 700; }
+    .pending-row .meta-line { font-size: 10px; color: #6b7280; margin-top: 2px; word-break: break-all; }
+    .pending-row .approve-btn { background: #16a34a; color: #fff; font-size: 11px; padding: 4px 10px; border-radius: 4px; border: none; cursor: pointer; white-space: nowrap; font-weight: 700; }
     .pending-row .approve-btn:hover { background: #15803d; }
-    .pending-row .reject-btn {
-      background: #dc2626; color: #fff; font-size: 11px;
-      padding: 4px 10px; border-radius: 4px; border: none;
-      cursor: pointer; white-space: nowrap; font-weight: 700;
-    }
+    .pending-row .reject-btn { background: #dc2626; color: #fff; font-size: 11px; padding: 4px 10px; border-radius: 4px; border: none; cursor: pointer; white-space: nowrap; font-weight: 700; }
     .pending-row .reject-btn:hover { background: #b91c1c; }
 
-    #banOverlay {
-      position: fixed; inset: 0; background: #000;
-      z-index: 99999; display: none;
-      align-items: center; justify-content: center;
-      color: #fff; text-align: center; font-family: sans-serif;
-      flex-direction: column; padding: 20px;
-    }
+    #banOverlay { position: fixed; inset: 0; background: #000; z-index: 99999; display: none; align-items: center; justify-content: center; color: #fff; text-align: center; font-family: sans-serif; flex-direction: column; padding: 20px; }
     #banOverlay.show { display: flex; }
-    #banOverlay .ban-msg {
-      font-size: 24px; font-weight: bold;
-      letter-spacing: 0.1em;
-    }
-    #banOverlay .ban-sub {
-      font-size: 14px; margin-top: 16px; color: #fca5a5;
-      line-height: 1.6; max-width: 400px;
-    }
-    #banOverlay .ban-actions {
-      margin-top: 24px;
-      display: flex; gap: 12px; flex-wrap: wrap;
-      justify-content: center;
-    }
-    #banOverlay .ban-actions button {
-      font-size: 13px; padding: 10px 20px; border-radius: 6px;
-      border: none; cursor: pointer; font-weight: 600;
-      font-family: sans-serif;
-    }
-    #banOverlay .btn-switch-account {
-      background: #2563eb; color: #fff;
-    }
-    #banOverlay .btn-switch-account:hover {
-      background: #1d4ed8;
-    }
+    #banOverlay .ban-msg { font-size: 24px; font-weight: bold; letter-spacing: 0.1em; }
+    #banOverlay .ban-sub { font-size: 14px; margin-top: 16px; color: #fca5a5; line-height: 1.6; max-width: 400px; }
+    #banOverlay .ban-actions { margin-top: 24px; display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
+    #banOverlay .ban-actions button { font-size: 13px; padding: 10px 20px; border-radius: 6px; border: none; cursor: pointer; font-weight: 600; font-family: sans-serif; }
+    #banOverlay .btn-switch-account { background: #2563eb; color: #fff; }
+    #banOverlay .btn-switch-account:hover { background: #1d4ed8; }
 
-    #unpublishedOverlay {
-      position: fixed; inset: 0;
-      background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
-      z-index: 99998;
-      display: none;
-      flex-direction: column;
-      border: 8px solid #78350f;
-      box-shadow: inset 0 0 60px rgba(120, 53, 15, 0.3);
-      box-sizing: border-box;
-      overflow: auto;
-    }
+    #unpublishedOverlay { position: fixed; inset: 0; background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); z-index: 99998; display: none; flex-direction: column; border: 8px solid #78350f; box-shadow: inset 0 0 60px rgba(120, 53, 15, 0.3); box-sizing: border-box; overflow: auto; }
     #unpublishedOverlay.show { display: flex; }
+    #unpublishedOverlay .unp-center { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 40px 20px; text-align: center; font-family: sans-serif; color: #78350f; }
+    #unpublishedOverlay .unp-bar { background: #78350f; color: #fde68a; font-size: 11px; padding: 6px 14px; font-family: monospace; letter-spacing: 0.1em; display: flex; align-items: center; gap: 8px; }
+    #unpublishedOverlay .unp-bar::before { content: "🔒"; font-size: 12px; }
+    #unpublishedOverlay .unp-msg { font-size: 48px; font-weight: bold; letter-spacing: 0.05em; text-shadow: 2px 2px 0 #fff, 4px 4px 0 rgba(0,0,0,0.1); margin-bottom: 8px; }
+    #unpublishedOverlay .unp-sub { font-size: 15px; margin-top: 16px; color: #92400e; line-height: 1.8; max-width: 480px; }
+    #unpublishedOverlay .unp-action { margin-top: 36px; }
+    #unpublishedOverlay .unp-go-btn { background: #78350f; color: #fff; font-size: 20px; padding: 16px 56px; border-radius: 10px; border: none; cursor: pointer; font-weight: 700; font-family: sans-serif; box-shadow: 0 5px 0 #451a03; transition: transform 0.1s, box-shadow 0.1s; letter-spacing: 0.1em; }
+    #unpublishedOverlay .unp-go-btn:hover { background: #451a03; }
+    #unpublishedOverlay .unp-go-btn:active { transform: translateY(3px); box-shadow: 0 2px 0 #451a03; }
+    #unpublishedOverlay .unp-footer { margin-top: 24px; font-size: 11px; color: #a16207; font-family: monospace; letter-spacing: 0.05em; }
+    #unpublishedOverlay .unp-image { margin: 16px auto 8px; display: flex; align-items: center; justify-content: center; }
+    #unpublishedOverlay .unp-image img { max-width: min(280px, 70vw); max-height: 220px; width: auto; height: auto; object-fit: contain; border-radius: 12px; border: 3px solid #78350f; box-shadow: 0 6px 18px rgba(120, 53, 15, 0.35), 0 0 0 3px rgba(255,255,255,0.6) inset; background: #fff; padding: 4px; }
 
-    #unpublishedOverlay .unp-center {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 40px 20px;
-      text-align: center;
-      font-family: sans-serif;
-      color: #78350f;
-    }
-
-    #unpublishedOverlay .unp-bar {
-      background: #78350f;
-      color: #fde68a;
-      font-size: 11px;
-      padding: 6px 14px;
-      font-family: monospace;
-      letter-spacing: 0.1em;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-    #unpublishedOverlay .unp-bar::before {
-      content: "🔒";
-      font-size: 12px;
-    }
-
-    #unpublishedOverlay .unp-msg {
-      font-size: 48px; font-weight: bold;
-      letter-spacing: 0.05em;
-      text-shadow: 2px 2px 0 #fff, 4px 4px 0 rgba(0,0,0,0.1);
-      margin-bottom: 8px;
-    }
-    #unpublishedOverlay .unp-sub {
-      font-size: 15px; margin-top: 16px; color: #92400e;
-      line-height: 1.8; max-width: 480px;
-    }
-    #unpublishedOverlay .unp-action {
-      margin-top: 36px;
-    }
-    #unpublishedOverlay .unp-go-btn {
-      background: #78350f; color: #fff;
-      font-size: 20px; padding: 16px 56px; border-radius: 10px;
-      border: none; cursor: pointer; font-weight: 700;
-      font-family: sans-serif;
-      box-shadow: 0 5px 0 #451a03;
-      transition: transform 0.1s, box-shadow 0.1s;
-      letter-spacing: 0.1em;
-    }
-    #unpublishedOverlay .unp-go-btn:hover {
-      background: #451a03;
-    }
-    #unpublishedOverlay .unp-go-btn:active {
-      transform: translateY(3px);
-      box-shadow: 0 2px 0 #451a03;
-    }
-    #unpublishedOverlay .unp-footer {
-      margin-top: 24px;
-      font-size: 11px;
-      color: #a16207;
-      font-family: monospace;
-      letter-spacing: 0.05em;
-    }
+    #cornerImage { position: fixed; top: 12px; left: 12px; z-index: 99990; pointer-events: none; display: block; }
+    #cornerImage img { width: 120px; height: 120px; object-fit: contain; display: block; filter: drop-shadow(0 3px 8px rgba(0,0,0,0.4)); border-radius: 10px; background: transparent; }
+    @media (max-width: 640px) { #cornerImage img { width: 80px; height: 80px; } }
 
     #siteRules { transition: box-shadow 0.2s; }
     #siteRules.collapsed #rulesContent { display: none; }
     #siteRules.collapsed #rulesToggleIcon { transform: rotate(-90deg); }
     #rulesToggleIcon { transition: transform 0.2s; display: inline-block; }
 
-    #bootOverlay {
-      position: fixed; inset: 0; background: #111827;
-      z-index: 99997; display: flex;
-      align-items: center; justify-content: center;
-      color: #fff; font-family: sans-serif;
-      flex-direction: column; gap: 16px;
-    }
+    #bootOverlay { position: fixed; inset: 0; background: #111827; z-index: 99997; display: flex; align-items: center; justify-content: center; color: #fff; font-family: sans-serif; flex-direction: column; gap: 16px; }
     #bootOverlay.hidden { display: none; }
-    #bootOverlay .boot-msg {
-      font-size: 14px; color: #9ca3af;
-    }
-    #bootOverlay .boot-spinner {
-      width: 40px; height: 40px;
-      border: 3px solid #374151;
-      border-top-color: #ef4444;
-      border-radius: 50%;
-      animation: spin 0.8s linear infinite;
-    }
+    #bootOverlay .boot-msg { font-size: 14px; color: #9ca3af; }
+    #bootOverlay .boot-spinner { width: 40px; height: 40px; border: 3px solid #374151; border-top-color: #ef4444; border-radius: 50%; animation: spin 0.8s linear infinite; }
 
-    body {
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-    }
-    input, textarea, [contenteditable="true"] {
-      -webkit-user-select: text;
-      -moz-user-select: text;
-      -ms-user-select: text;
-      user-select: text;
-    }
+    body { -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+    input, textarea, [contenteditable="true"] { -webkit-user-select: text; -moz-user-select: text; -ms-user-select: text; user-select: text; }
 
-    .badge-feature-list {
-      margin-top: 6px;
-      font-size: 11px;
-      color: #4b5563;
-      background: #f3f4f6;
-      padding: 6px 8px;
-      border-radius: 4px;
-      border: 1px solid #e5e7eb;
-    }
-    .badge-feature-list .feat-tag {
-      display: inline-block;
-      background: #e5e7eb;
-      padding: 2px 8px;
-      border-radius: 9999px;
-      margin: 2px;
-      font-size: 10px;
-      font-weight: 600;
-    }
-    .badge-feature-list .feat-tag.active {
-      background: #16a34a;
-      color: #fff;
-    }
+    .badge-feature-list { margin-top: 6px; font-size: 11px; color: #4b5563; background: #f3f4f6; padding: 6px 8px; border-radius: 4px; border: 1px solid #e5e7eb; }
+    .badge-feature-list .feat-tag { display: inline-block; background: #e5e7eb; padding: 2px 8px; border-radius: 9999px; margin: 2px; font-size: 10px; font-weight: 600; }
+    .badge-feature-list .feat-tag.active { background: #16a34a; color: #fff; }
 
     #boardView { margin-top: 16px; }
-    .board-card {
-      background: #fff;
-      border: 1px solid #d1d5db;
-      border-radius: 8px;
-      padding: 16px;
-      margin-bottom: 12px;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.06);
-      border-left: 4px solid #b45309;
-    }
-    .board-card .board-title {
-      font-weight: 700;
-      color: #78350f;
-      font-size: 18px;
-    }
-    .board-card .board-meta {
-      font-size: 11px;
-      color: #6b7280;
-      margin-top: 2px;
-    }
-    .board-card .board-body {
-      margin-top: 8px;
-      font-size: 14px;
-      color: #1f2937;
-      white-space: pre-wrap;
-      word-break: break-word;
-    }
+    .board-card { background: #fff; border: 1px solid #d1d5db; border-radius: 8px; padding: 16px; margin-bottom: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.06); border-left: 4px solid #b45309; }
+    .board-card .board-title { font-weight: 700; color: #78350f; font-size: 18px; }
+    .board-card .board-meta { font-size: 11px; color: #6b7280; margin-top: 2px; }
+    .board-card .board-body { margin-top: 8px; font-size: 14px; color: #1f2937; white-space: pre-wrap; word-break: break-word; }
     .board-card .board-img { margin-top: 10px; }
-    .board-card .board-img img {
-      max-height: 360px;
-      max-width: 100%;
-      border-radius: 6px;
-      border: 1px solid #e5e7eb;
-    }
-    .board-card .board-img a {
-      font-size: 12px;
-      color: #2563eb;
-      text-decoration: underline;
-      word-break: break-all;
-    }
-    .board-delete-btn {
-      background: #dc2626; color: #fff; font-size: 11px; padding: 3px 10px;
-      border-radius: 4px; cursor: pointer; border: none;
-    }
+    .board-card .board-img img { max-height: 360px; max-width: 100%; border-radius: 6px; border: 1px solid #e5e7eb; }
+    .board-card .board-img a { font-size: 12px; color: #2563eb; text-decoration: underline; word-break: break-all; }
+    .board-delete-btn { background: #dc2626; color: #fff; font-size: 11px; padding: 3px 10px; border-radius: 4px; cursor: pointer; border: none; }
     .board-delete-btn:hover { background: #b91c1c; }
-
-    .board-publish-btn {
-      background: #b45309; color: #fff; font-size: 12px; padding: 8px 18px;
-      border-radius: 6px; border: none; cursor: pointer; font-weight: 700;
-    }
+    .board-publish-btn { background: #b45309; color: #fff; font-size: 12px; padding: 8px 18px; border-radius: 6px; border: none; cursor: pointer; font-weight: 700; }
     .board-publish-btn:hover { background: #92400e; }
     .board-publish-btn:disabled { background: #9ca3af; cursor: not-allowed; }
+    .board-form-box { background: #fffbeb; border: 1px solid #fcd34d; border-radius: 8px; padding: 16px; margin-bottom: 20px; }
+    .board-readonly-note { font-size: 12px; color: #92400e; background: #fef3c7; border: 1px solid #fcd34d; border-radius: 6px; padding: 8px 12px; margin-bottom: 16px; }
 
-    .board-form-box {
-      background: #fffbeb;
-      border: 1px solid #fcd34d;
-      border-radius: 8px;
-      padding: 16px;
-      margin-bottom: 20px;
-    }
-    .board-readonly-note {
-      font-size: 12px;
-      color: #92400e;
-      background: #fef3c7;
-      border: 1px solid #fcd34d;
-      border-radius: 6px;
-      padding: 8px 12px;
-      margin-bottom: 16px;
-    }
-
-    /* ===== 新着管理関連スタイル（追加） ===== */
-    .thread-item-unread {
-      background: #fffbeb !important;
-      border-left: 4px solid #f59e0b !important;
-    }
-    .thread-new-badge {
-      background: #f59e0b;
-      color: #fff;
-      font-size: 10px;
-      font-weight: 700;
-      padding: 2px 8px;
-      border-radius: 9999px;
-      white-space: nowrap;
-      animation: pulseOrange 1.6s infinite;
-    }
-    @keyframes pulseOrange {
-      0%, 100% { box-shadow: 0 0 0 0 rgba(245,158,11,0.7); }
-      50% { box-shadow: 0 0 0 6px rgba(245,158,11,0); }
-    }
-    .unread-count-badge {
-      background: #dc2626;
-      color: #fff;
-      font-size: 10px;
-      font-weight: 700;
-      padding: 1px 7px;
-      border-radius: 9999px;
-      white-space: nowrap;
-    }
-    .post-new-badge {
-      background: #f59e0b;
-      color: #fff;
-      font-size: 9px;
-      font-weight: 700;
-      padding: 1px 6px;
-      border-radius: 4px;
-      margin-left: 4px;
-      animation: pulseOrange 1.6s infinite;
-    }
-    .unread-only-wrap {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      font-size: 12px;
-      color: #374151;
-      background: #fef3c7;
-      border: 1px solid #fcd34d;
-      padding: 4px 10px;
-      border-radius: 6px;
-      cursor: pointer;
-      user-select: none;
-    }
+    .thread-item-unread { background: #fffbeb !important; border-left: 4px solid #f59e0b !important; }
+    .thread-new-badge { background: #f59e0b; color: #fff; font-size: 10px; font-weight: 700; padding: 2px 8px; border-radius: 9999px; white-space: nowrap; animation: pulseOrange 1.6s infinite; }
+    @keyframes pulseOrange { 0%, 100% { box-shadow: 0 0 0 0 rgba(245,158,11,0.7); } 50% { box-shadow: 0 0 0 6px rgba(245,158,11,0); } }
+    .unread-count-badge { background: #dc2626; color: #fff; font-size: 10px; font-weight: 700; padding: 1px 7px; border-radius: 9999px; white-space: nowrap; }
+    .post-new-badge { background: #f59e0b; color: #fff; font-size: 9px; font-weight: 700; padding: 1px 6px; border-radius: 4px; margin-left: 4px; animation: pulseOrange 1.6s infinite; }
+    .unread-only-wrap { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; color: #374151; background: #fef3c7; border: 1px solid #fcd34d; padding: 4px 10px; border-radius: 6px; cursor: pointer; user-select: none; }
     .unread-only-wrap input { cursor: pointer; }
-    .thread-list-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 8px;
-      border-bottom: 1px solid #e5e7eb;
-      padding-bottom: 6px;
-      margin-bottom: 12px;
-    }
+    .thread-list-header { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; border-bottom: 1px solid #e5e7eb; padding-bottom: 6px; margin-bottom: 12px; }
   </style>
 </head>
 <body class="bg-gray-100 text-gray-800 font-sans p-4 max-w-4xl mx-auto">
+
+  <div id="cornerImage">
+    <img src="https://lh3.googleusercontent.com/d/1AYPB48tOtoLlq-1gfUgpGmE1HTPonDYz" alt="corner image" referrerpolicy="no-referrer">
+  </div>
 
   <div id="bootOverlay">
     <div class="boot-spinner"></div>
     <div class="boot-msg">アカウントを確認しています...</div>
   </div>
 
-  <!-- ===== 手動警報トースト（画面右上） ===== -->
   <div id="alarmToast">
     <div class="alarm-toast-head">
       <span class="alarm-toast-icon">🚨</span>
       <span class="alarm-toast-title">警 報 発 令 中</span>
     </div>
     <div class="alarm-toast-body">
-      <div class="row">
-        <span class="label">理由:</span>
-        <span class="value" id="alarmToastReason">緊急対応</span>
-      </div>
-      <div class="row">
-        <span class="label">発令者:</span>
-        <span class="value" id="alarmToastIssuer">管理者</span>
-      </div>
+      <div class="row"><span class="label">理由:</span><span class="value" id="alarmToastReason">緊急対応</span></div>
+      <div class="row"><span class="label">発令者:</span><span class="value" id="alarmToastIssuer">管理者</span></div>
     </div>
     <div class="alarm-toast-footer">SYSTEM ALARM / シクナイちゃんねる</div>
   </div>
@@ -922,45 +277,35 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
   <div id="unpublishedOverlay">
     <div class="unp-bar">SECURE FRAME / SITE PAUSED</div>
     <div class="unp-center">
-      <div class="unp-msg">ちょっと待って！</div>
-      <div class="unp-sub" id="unpublishedSub">現在このサイトは非公開です。<br>もうしばらくお待ちください。</div>
-      <div class="unp-action">
-        <button class="unp-go-btn" id="unpGoBtn">了解</button>
+      <div class="unp-msg">メンテナンス中...</div>
+      <div class="unp-image">
+        <img src="https://lh3.googleusercontent.com/d/1AYPB48tOtoLlq-1gfUgpGmE1HTPonDYz" alt="maintenance image" referrerpolicy="no-referrer">
       </div>
+      <div class="unp-sub" id="unpublishedSub">現在メンテナンス中です。<br>もうしばらくお待ちください。</div>
+      <div class="unp-action"><button class="unp-go-btn" id="unpGoBtn">了解</button></div>
       <div class="unp-footer">© シクナイちゃんねる / overlay mode</div>
     </div>
   </div>
 
   <div id="siteRules" class="collapsed bg-white border-2 border-red-800 rounded-lg shadow mb-4 overflow-hidden">
-    <button id="rulesToggleBtn"
-      class="w-full bg-red-900 hover:bg-red-800 text-white text-left px-4 py-3 flex items-center justify-between transition">
-      <span class="font-bold text-base flex items-center gap-2">
-        📜 シクナイちゃんねる 利用ルール
-      </span>
+    <button id="rulesToggleBtn" class="w-full bg-red-900 hover:bg-red-800 text-white text-left px-4 py-3 flex items-center justify-between transition">
+      <span class="font-bold text-base flex items-center gap-2">📜 シクナイちゃんねる 利用ルール</span>
       <span id="rulesToggleIcon" class="text-xl">▼</span>
     </button>
     <div id="rulesContent" class="px-4 py-4 text-sm text-gray-800 leading-relaxed">
       <ol class="list-decimal list-inside space-y-2">
         <li><strong class="text-red-900">Googleログイン必須</strong><br>当サイトのご利用にはGoogleアカウントでのログインが必要です。投稿は匿名で表示されます。</li>
-        <li><strong class="text-red-900">初回ログインは承認制</strong><br>初めて当サイトを利用する場合、管理者または主による承認が必要です。承認されるまでサイトをご利用いただけません。教師防止のためです。</li>
+        <li><strong class="text-red-900">初回ログインは承認制</strong><br>初めて当サイトを利用する場合、管理者または主による承認が必要です。</li>
         <li><strong class="text-red-900">禁止事項</strong>
           <ul class="list-disc list-inside ml-4 mt-1 space-y-1 text-gray-700">
             <li>他の利用者への誹謗中傷・脅迫・嫌がらせ</li>
             <li>荒らし行為（連投・意味のない投稿の繰り返し）</li>
-            <li>ネットミーム・有名なことなどの個人情報公開は許可しますが、限度が行きすぎている場合は削除いたします。</li>
           </ul>
         </li>
-        <li><strong class="text-red-900">投稿内容の責任</strong><br>投稿内容は投稿者自身の責任です。運営は投稿内容について一切の責任を負いません。</li>
-        <li><strong class="text-red-900">運営による削除・BAN</strong><br>限度を超えたと判断された場合、予告なく投稿の削除・アカウントのBAN（利用停止）を行うことがあります。BANされた場合、当サイトへのアクセスが拒否されます。ただし人を晒したりすることを超えることがなければ利用停止になることはありません。お気軽にご利用ください。</li>
-        <li><strong class="text-red-900">記録される情報</strong><br>運営は以下の情報を記録しています。これらの情報は管理者・主のみが閲覧でき、一般利用者には公開されません。
-          <ul class="list-disc list-inside ml-4 mt-1 space-y-1 text-gray-700">
-            <li>Googleアカウントのメールアドレス</li>
-            <li>ログイン日時</li>
-            <li>デバイス情報（ブラウザ・OS等を組み合わせた識別子）</li>
-          </ul>
-        </li>
-        <li><strong class="text-red-900">免責事項</strong><br>当サイトの利用によって生じたいかなる損害についても、運営は責任を負いません。予告なくサービスを変更・終了する場合があります。</li>
-        <li><strong class="text-red-900">ルールの変更</strong><br>本ルールは予告なく変更されることがあります。変更後も利用を継続した場合、変更内容に同意したものとみなします。</li>
+        <li><strong class="text-red-900">投稿内容の責任</strong><br>投稿内容は投稿者自身の責任です。</li>
+        <li><strong class="text-red-900">運営による削除・BAN</strong><br>限度を超えたと判断された場合、予告なく投稿の削除・アカウントのBANを行います。</li>
+        <li><strong class="text-red-900">記録される情報</strong><br>メールアドレス・ログイン日時・デバイス情報を記録します。</li>
+        <li><strong class="text-red-900">免責事項</strong><br>当サイトの利用によって生じたいかなる損害についても、運営は責任を負いません。</li>
       </ol>
       <p class="mt-4 text-xs text-gray-500 text-right">最終更新: 2026年9月</p>
     </div>
@@ -979,12 +324,12 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
   <div id="publishModal" class="modal-backdrop hidden">
     <div class="modal-content">
       <h3 class="text-lg font-bold text-gray-800 mb-1">🌐 サイト公開設定</h3>
-      <p class="text-xs text-gray-500 mb-4">非公開にすると、一般ユーザー・VIPの画面に「ちょっと待って！」Frameが被さります。<br>管理者・主は通常通りサイトを使えます。</p>
+      <p class="text-xs text-gray-500 mb-4">非公開にすると、一般ユーザー・VIPの画面にFrameが被さります。</p>
       <div class="mb-4 p-3 bg-gray-50 rounded border border-gray-200">
         <p class="text-xs text-gray-600 mb-1">現在のステータス:</p>
         <p id="publishStatusLabel" class="text-sm font-bold">公開中</p>
       </div>
-      <label class="block text-xs text-gray-600 mb-1">飛び先URL（非公開時に「何？」ボタンで飛ぶURL）:</label>
+      <label class="block text-xs text-gray-600 mb-1">飛び先URL:</label>
       <input type="url" id="publishUrlInput" placeholder="https://example.com/" class="w-full border p-2 rounded text-sm mb-3 font-mono">
       <div class="flex justify-end gap-2 flex-wrap">
         <button id="publishCancelBtn" class="reply-cancel-btn">キャンセル</button>
@@ -994,16 +339,11 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
     </div>
   </div>
 
-  <!-- ===== 手動警報モーダル ===== -->
   <div id="alarmModal" class="modal-backdrop hidden">
     <div class="modal-content" style="max-width: 520px; border-top: 6px solid #b91c1c;">
       <h3 class="text-lg font-bold text-red-800 mb-1">🚨 手動警報を発令</h3>
-      <p class="text-xs text-gray-500 mb-4">
-        全ユーザー（未ログイン含む）の画面右上に警報トーストを表示します。<br>
-        管理者・主は影響を受けません。
-      </p>
-      <label class="block text-xs text-gray-600 mb-1">発令理由（任意・全員に表示されます）:</label>
-      <input type="text" id="alarmReasonInput" maxlength="80" placeholder="例: 荒らし対応中です。しばらくお待ちください。" class="w-full border p-2 rounded text-sm mb-3">
+      <label class="block text-xs text-gray-600 mb-1">発令理由（任意）:</label>
+      <input type="text" id="alarmReasonInput" maxlength="80" class="w-full border p-2 rounded text-sm mb-3">
       <div class="flex justify-end gap-2 flex-wrap">
         <button id="alarmCancelBtn" class="reply-cancel-btn">キャンセル</button>
         <button id="alarmFireBtn" class="bg-red-700 hover:bg-red-800 text-white text-xs py-2 px-5 rounded font-bold">🚨 警報を発令する</button>
@@ -1013,80 +353,41 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
 
   <div id="badgeModal" class="modal-backdrop hidden">
     <div class="modal-content" style="max-width: 620px;">
-      <h3 class="text-lg font-bold text-gray-800 mb-1">🏷️ バッジ管理（機能設定可能）</h3>
-      <p class="text-xs text-gray-500 mb-4">
-        対象: <span id="badgeTargetEmail" class="admin-email"></span>
-      </p>
-
+      <h3 class="text-lg font-bold text-gray-800 mb-1">🏷️ バッジ管理</h3>
+      <p class="text-xs text-gray-500 mb-4">対象: <span id="badgeTargetEmail" class="admin-email"></span></p>
       <div class="mb-3">
         <p class="text-xs font-bold text-gray-600 mb-2">現在のバッジ:</p>
-        <div id="badgeListContainer">
-          <p class="text-xs text-gray-400">（なし）</p>
-        </div>
+        <div id="badgeListContainer"><p class="text-xs text-gray-400">（なし）</p></div>
       </div>
-
       <button id="addBadgeBtn" class="add-badge-btn w-full mb-3">＋ 新しいバッジを追加</button>
-
       <div id="badgeEditor" class="editor-box hidden">
         <p class="text-xs font-bold text-gray-700 mb-2" id="badgeEditorTitle">新しいバッジ</p>
-
         <label class="block text-xs text-gray-600 mb-1">バッジ名（最大12文字）:</label>
-        <input type="text" id="badgeLabelInput" maxlength="12" placeholder="例: 常連 / 荒らし / 神" class="w-full border p-2 rounded text-sm mb-3">
-
+        <input type="text" id="badgeLabelInput" maxlength="12" class="w-full border p-2 rounded text-sm mb-3">
         <label class="block text-xs text-gray-600 mb-1">バッジ色:</label>
         <div class="color-swatch-row mb-3" id="badgeColorRow"></div>
         <div class="flex items-center gap-2 mb-3">
           <input type="color" id="badgeColorPicker" value="#ef4444" class="w-10 h-8 border rounded cursor-pointer">
           <input type="text" id="badgeColorText" value="#ef4444" maxlength="7" class="flex-1 border p-2 rounded text-sm font-mono">
         </div>
-
         <div class="mb-3">
           <p class="text-xs text-gray-600 mb-1">プレビュー:</p>
           <span id="badgePreviewChip" class="custom-badge" style="background:#ef4444;">バッジ</span>
         </div>
-
         <div class="mb-3 p-3 bg-gray-50 rounded border border-gray-200">
-          <p class="text-xs font-bold text-gray-700 mb-2">⚙️ バッジに付与する機能（複数選択可）</p>
+          <p class="text-xs font-bold text-gray-700 mb-2">⚙️ バッジに付与する機能</p>
           <div class="space-y-1">
-            <label class="flex items-center gap-2 text-xs text-gray-700 cursor-pointer">
-              <input type="checkbox" class="badge-feature-checkbox" value="canDeletePost" data-feature="canDeletePost">
-              <span>🗑️ 投稿削除権限（レス削除）</span>
-            </label>
-            <label class="flex items-center gap-2 text-xs text-gray-700 cursor-pointer">
-              <input type="checkbox" class="badge-feature-checkbox" value="canDeleteThread" data-feature="canDeleteThread">
-              <span>🧵 スレッド削除権限</span>
-            </label>
-            <label class="flex items-center gap-2 text-xs text-gray-700 cursor-pointer">
-              <input type="checkbox" class="badge-feature-checkbox" value="canBan" data-feature="canBan">
-              <span>🚫 BAN権限</span>
-            </label>
-            <label class="flex items-center gap-2 text-xs text-gray-700 cursor-pointer">
-              <input type="checkbox" class="badge-feature-checkbox" value="canApprove" data-feature="canApprove">
-              <span>🔔 承認権限</span>
-            </label>
-            <label class="flex items-center gap-2 text-xs text-gray-700 cursor-pointer">
-              <input type="checkbox" class="badge-feature-checkbox" value="canPublish" data-feature="canPublish">
-              <span>🌐 公開設定権限</span>
-            </label>
-            <label class="flex items-center gap-2 text-xs text-gray-700 cursor-pointer">
-              <input type="checkbox" class="badge-feature-checkbox" value="canViewEmail" data-feature="canViewEmail">
-              <span>📧 メールアドレス閲覧権限</span>
-            </label>
-            <label class="flex items-center gap-2 text-xs text-gray-700 cursor-pointer">
-              <input type="checkbox" class="badge-feature-checkbox" value="canBackup" data-feature="canBackup">
-              <span>💾 バックアップ・復元権限</span>
-            </label>
-            <label class="flex items-center gap-2 text-xs text-gray-700 cursor-pointer">
-              <input type="checkbox" class="badge-feature-checkbox" value="canManageBadge" data-feature="canManageBadge">
-              <span>🏷️ バッジ管理権限</span>
-            </label>
-            <label class="flex items-center gap-2 text-xs text-gray-700 cursor-pointer">
-              <input type="checkbox" class="badge-feature-checkbox" value="canManageBoard" data-feature="canManageBoard">
-              <span>📋 掲示板管理権限（投稿・削除）</span>
-            </label>
+            <label class="flex items-center gap-2 text-xs text-gray-700 cursor-pointer"><input type="checkbox" class="badge-feature-checkbox" value="canDeletePost"><span>🗑️ 投稿削除</span></label>
+            <label class="flex items-center gap-2 text-xs text-gray-700 cursor-pointer"><input type="checkbox" class="badge-feature-checkbox" value="canDeleteThread"><span>🧵 スレッド削除</span></label>
+            <label class="flex items-center gap-2 text-xs text-gray-700 cursor-pointer"><input type="checkbox" class="badge-feature-checkbox" value="canBan"><span>🚫 BAN</span></label>
+            <label class="flex items-center gap-2 text-xs text-gray-700 cursor-pointer"><input type="checkbox" class="badge-feature-checkbox" value="canApprove"><span>🔔 承認</span></label>
+            <label class="flex items-center gap-2 text-xs text-gray-700 cursor-pointer"><input type="checkbox" class="badge-feature-checkbox" value="canPublish"><span>🌐 公開設定</span></label>
+            <label class="flex items-center gap-2 text-xs text-gray-700 cursor-pointer"><input type="checkbox" class="badge-feature-checkbox" value="canViewEmail"><span>📧 メール閲覧</span></label>
+            <label class="flex items-center gap-2 text-xs text-gray-700 cursor-pointer"><input type="checkbox" class="badge-feature-checkbox" value="canBackup"><span>💾 バックアップ</span></label>
+            <label class="flex items-center gap-2 text-xs text-gray-700 cursor-pointer"><input type="checkbox" class="badge-feature-checkbox" value="canManageBadge"><span>🏷️ バッジ管理</span></label>
+            <label class="flex items-center gap-2 text-xs text-gray-700 cursor-pointer"><input type="checkbox" class="badge-feature-checkbox" value="canManageBoard"><span>📋 掲示板管理</span></label>
           </div>
         </div>
-
         <div class="flex justify-end gap-2">
           <button id="badgeEditorCancelBtn" class="reply-cancel-btn">キャンセル</button>
           <button id="badgeSaveBtn" class="bg-red-800 hover:bg-red-900 text-white text-xs py-1.5 px-4 rounded font-bold">保存</button>
@@ -1098,28 +399,49 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
     </div>
   </div>
 
+  <!-- ===== BAN管理モーダル（全BAN強制解除ボタン追加） ===== -->
   <div id="banModal" class="modal-backdrop hidden">
     <div class="modal-content">
       <h3 class="text-lg font-bold text-gray-800 mb-1">🚫 BANユーザー管理</h3>
-      <p class="text-xs text-gray-500 mb-4">メールアドレスを指定してBANできます（未投稿でも可）。BANはUID・メール・デバイスの3つに紐づきます。</p>
+
+      <!-- 🔧 NEW: 全BAN強制解除 -->
+      <div class="p-3 border-2 border-red-700 bg-red-100 rounded mb-4">
+        <p class="text-xs font-bold text-red-800 mb-2">🔓 全BAN強制解除（管理者・主のみ）</p>
+        <p class="text-xs text-red-700 mb-2">
+          現在BANされている<span class="font-bold">全ユーザー</span>のBANを一括解除します。<br>
+          <span class="font-bold">bans / deviceBans を完全に空にします。</span><br>
+          この操作は取り消せません。
+        </p>
+        <button id="forceUnbanAllBtn"
+          class="bg-red-800 hover:bg-red-900 text-white text-sm py-3 px-4 rounded font-bold w-full border-2 border-red-950">
+          🔓 全BAN強制解除する
+        </button>
+      </div>
+
       <div class="p-3 border border-red-200 bg-red-50 rounded mb-4">
         <p class="text-xs font-bold text-red-700 mb-2">新規BAN</p>
         <label class="block text-xs text-gray-600 mb-1">メールアドレス（必須）:</label>
-        <input type="email" id="banEmailInput" placeholder="例: spammer@gmail.com" class="w-full border p-2 rounded text-sm mb-2 font-mono">
+        <input type="email" id="banEmailInput" class="w-full border p-2 rounded text-sm mb-2 font-mono">
         <label class="block text-xs text-gray-600 mb-1">理由（任意）:</label>
-        <input type="text" id="banReasonInput" placeholder="例: 荒らし" class="w-full border p-2 rounded text-sm mb-2" maxlength="100">
+        <input type="text" id="banReasonInput" class="w-full border p-2 rounded text-sm mb-2" maxlength="100">
         <label class="flex items-center gap-2 text-xs text-gray-600 mb-3 cursor-pointer">
           <input type="checkbox" id="banDeviceCheck" checked>
-          <span>このメールに紐づくデバイスもBANする（フィンガープリント登録）</span>
+          <span>このメールに紐づくデバイスもBANする</span>
         </label>
         <button id="banAddBtn" class="bg-red-800 hover:bg-red-900 text-white text-xs py-2 px-4 rounded font-bold w-full">このメールアドレスをBANする</button>
       </div>
+
       <div>
         <p class="text-xs font-bold text-gray-600 mb-2">現在BANされているユーザー:</p>
-        <div id="banListContainer">
-          <p class="text-xs text-gray-400">（読み込み中...）</p>
-        </div>
+        <div id="banListContainer"><p class="text-xs text-gray-400">（読み込み中...）</p></div>
       </div>
+
+      <div class="mt-4 pt-3 border-t border-gray-200">
+        <p class="text-xs font-bold text-gray-600 mb-2">🛠️ 誤BAN修復ツール</p>
+        <p class="text-xs text-gray-500 mb-2">自動連鎖（SYSTEM_DEVICE_LINK）で登録されたBANのうち、元のBANが既に解除されているものを一括削除します。</p>
+        <button id="cleanupAutoBansBtn" class="bg-amber-700 hover:bg-amber-800 text-white text-xs py-2 px-4 rounded font-bold w-full">🧹 自動連鎖BANをクリーンアップ</button>
+      </div>
+
       <div class="flex justify-end mt-4">
         <button id="banCloseBtn" class="reply-cancel-btn">閉じる</button>
       </div>
@@ -1128,43 +450,26 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
 
   <div id="userModal" class="modal-backdrop hidden">
     <div class="modal-content" style="max-width: 720px;">
-      <h3 class="text-lg font-bold text-gray-800 mb-1">👥 サイトを開いたユーザー一覧</h3>
-      <p class="text-xs text-gray-500 mb-3">ログインしたことがある全ユーザーの一覧です（新しい順）。<br>管理者・主はニックネームを設定できます（一般ユーザーには表示されません）。</p>
+      <h3 class="text-lg font-bold text-gray-800 mb-1">👥 ユーザー一覧</h3>
       <input type="text" id="userSearchInput" class="user-search-input" placeholder="🔍 メールアドレスまたはニックネームで検索...">
       <div class="flex items-center justify-between mb-2 flex-wrap gap-2">
         <p class="text-xs text-gray-600">合計: <span id="userCountLabel" class="font-bold">0</span> 人</p>
         <div class="flex items-center gap-3 flex-wrap">
-          <label class="flex items-center gap-1 text-xs text-gray-600 cursor-pointer">
-            <input type="checkbox" id="userShowOnlyNotBanned">
-            <span>BANされていない人のみ</span>
-          </label>
-          <label class="flex items-center gap-1 text-xs text-gray-600 cursor-pointer">
-            <input type="checkbox" id="userShowOnlyNicknamed">
-            <span>ニックネーム設定済みのみ</span>
-          </label>
+          <label class="flex items-center gap-1 text-xs text-gray-600 cursor-pointer"><input type="checkbox" id="userShowOnlyNotBanned"><span>BANされていない人のみ</span></label>
+          <label class="flex items-center gap-1 text-xs text-gray-600 cursor-pointer"><input type="checkbox" id="userShowOnlyNicknamed"><span>ニックネーム設定済みのみ</span></label>
         </div>
       </div>
-      <div id="userListContainer" style="max-height: 55vh; overflow-y: auto;">
-        <p class="text-xs text-gray-400">（読み込み中...）</p>
-      </div>
-      <div class="flex justify-end mt-4">
-        <button id="userCloseBtn" class="reply-cancel-btn">閉じる</button>
-      </div>
+      <div id="userListContainer" style="max-height: 55vh; overflow-y: auto;"><p class="text-xs text-gray-400">（読み込み中...）</p></div>
+      <div class="flex justify-end mt-4"><button id="userCloseBtn" class="reply-cancel-btn">閉じる</button></div>
     </div>
   </div>
 
   <div id="nicknameModal" class="modal-backdrop hidden">
     <div class="modal-content" style="max-width: 480px;">
       <h3 class="text-lg font-bold text-gray-800 mb-1">✏️ ニックネーム設定</h3>
-      <p class="text-xs text-gray-500 mb-4">
-        対象: <span id="nicknameTargetEmail" class="admin-email"></span>
-      </p>
-      <p class="text-xs text-amber-700 bg-amber-50 border border-amber-200 rounded p-2 mb-3">
-        ⚠️ ニックネームは管理者・主のみが閲覧できます。一般ユーザーには表示されません。
-      </p>
+      <p class="text-xs text-gray-500 mb-4">対象: <span id="nicknameTargetEmail" class="admin-email"></span></p>
       <label class="block text-xs text-gray-600 mb-1">ニックネーム（最大20文字）:</label>
-      <input type="text" id="nicknameInput" maxlength="20" placeholder="例: 常連さん / 要注意人物"
-        class="w-full border p-2 rounded text-sm mb-3 focus:ring-2 focus:ring-blue-300 outline-none">
+      <input type="text" id="nicknameInput" maxlength="20" class="w-full border p-2 rounded text-sm mb-3">
       <div class="flex justify-end gap-2 flex-wrap">
         <button id="nicknameCancelBtn" class="reply-cancel-btn">キャンセル</button>
         <button id="nicknameDeleteBtn" class="delete-btn">削除</button>
@@ -1176,16 +481,12 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
   <div id="pendingModal" class="modal-backdrop hidden">
     <div class="modal-content" style="max-width: 640px;">
       <h3 class="text-lg font-bold text-gray-800 mb-1">🔔 承認待ちユーザー</h3>
-      <p class="text-xs text-gray-500 mb-3">初めてログインしたユーザーです。承認すると利用可能になります。</p>
+      <p class="text-xs text-gray-500 mb-3">初めてログインしたユーザーです。</p>
       <div class="flex items-center justify-between mb-2">
         <p class="text-xs text-gray-600">承認待ち: <span id="pendingCountLabel" class="font-bold text-red-700">0</span> 人</p>
       </div>
-      <div id="pendingListContainer" style="max-height: 55vh; overflow-y: auto;">
-        <p class="text-xs text-gray-400">（読み込み中...）</p>
-      </div>
-      <div class="flex justify-end mt-4">
-        <button id="pendingCloseBtn" class="reply-cancel-btn">閉じる</button>
-      </div>
+      <div id="pendingListContainer" style="max-height: 55vh; overflow-y: auto;"><p class="text-xs text-gray-400">（読み込み中...）</p></div>
+      <div class="flex justify-end mt-4"><button id="pendingCloseBtn" class="reply-cancel-btn">閉じる</button></div>
     </div>
   </div>
 
@@ -1193,9 +494,7 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
     <div class="bg-white border border-gray-300 rounded-lg shadow p-8 max-w-md mx-auto mt-16 text-center">
       <h1 class="text-3xl font-bold text-red-900 mb-2">シクナイちゃんねる</h1>
       <p class="text-sm text-gray-600 mb-6">ご利用にはGoogleアカウントでのログインが必要です。</p>
-      <p class="text-sm text-gray-600 mb-6">安全のためです。</p>
-      <button id="googleLoginBtn"
-        class="bg-white border border-gray-300 hover:bg-gray-50 text-gray-700 font-bold py-3 px-6 rounded shadow-sm flex items-center justify-center gap-3 mx-auto transition w-full">
+      <button id="googleLoginBtn" class="bg-white border border-gray-300 hover:bg-gray-50 text-gray-700 font-bold py-3 px-6 rounded shadow-sm flex items-center justify-center gap-3 mx-auto transition w-full">
         <svg width="20" height="20" viewBox="0 0 48 48">
           <path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3c-1.6 4.7-6.1 8-11.3 8-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34.1 6.1 29.3 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.3-.4-3.5z"/>
           <path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34.1 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/>
@@ -1204,8 +503,7 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
         </svg>
         Googleでログイン
       </button>
-      <p class="text-xs text-gray-400 mt-4">※ 投稿は匿名で表示されます</p>
-      <p class="text-xs text-amber-700 mt-2 bg-amber-50 border border-amber-200 rounded p-2">⚠️ 初回ログイン時は管理者の承認が必要です</p>
+      <p class="text-xs text-amber-700 mt-4 bg-amber-50 border border-amber-200 rounded p-2">⚠️ 初回ログイン時は管理者の承認が必要です</p>
     </div>
   </div>
 
@@ -1217,11 +515,11 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
           <span id="connDot" class="inline-block w-2 h-2 rounded-full bg-gray-400"></span>
           <span id="connText">接続中...</span>
           <span id="roleBadgeContainer"></span>
-          <label id="badgeToggleWrap" class="badge-toggle-wrap hidden" title="自分の投稿に付くバッジを他の人に見せるかどうか">
+          <label id="badgeToggleWrap" class="badge-toggle-wrap hidden">
             <input type="checkbox" id="badgeToggle" checked>
             <span>バッジを他の人に見せる</span>
           </label>
-          <label id="emailToggleWrap" class="badge-toggle-wrap hidden" title="投稿者のメールアドレスを表示するかどうか">
+          <label id="emailToggleWrap" class="badge-toggle-wrap hidden">
             <input type="checkbox" id="emailToggle" checked>
             <span>メールアドレスを表示</span>
           </label>
@@ -1250,10 +548,10 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
       <section class="bg-amber-50 border border-amber-200 p-4 rounded mb-6 shadow-sm">
         <h2 class="text-lg font-bold text-gray-700 mb-2">新規スレッド作成</h2>
         <form id="createThreadForm" class="space-y-3">
-          <input type="text" id="threadTitle" placeholder="スレッドのタイトルを入力（必須）" maxlength="100" class="w-full border p-2 rounded text-sm focus:ring-2 focus:ring-red-300 focus:border-red-400 outline-none" required>
-          <textarea id="firstPostContent" rows="3" placeholder="最初の書き込み内容（任意）" maxlength="2000" class="w-full border p-2 rounded text-sm focus:ring-2 focus:ring-red-300 focus:border-red-400 outline-none"></textarea>
+          <input type="text" id="threadTitle" placeholder="スレッドのタイトルを入力（必須）" maxlength="100" class="w-full border p-2 rounded text-sm" required>
+          <textarea id="firstPostContent" rows="3" placeholder="最初の書き込み内容（任意）" maxlength="2000" class="w-full border p-2 rounded text-sm"></textarea>
           <div>
-            <label class="block text-xs text-gray-600 mb-1">画像を添付（自動リサイズ・最大200KB、任意）:</label>
+            <label class="block text-xs text-gray-600 mb-1">画像を添付（任意）:</label>
             <input type="file" id="threadFileInput" accept="image/*" class="text-xs text-gray-600 w-full">
             <div class="preview-box" id="threadPreviewBox">
               <img id="threadPreviewImg" alt="プレビュー">
@@ -1270,7 +568,7 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
             スレッド一覧
             <span id="unreadCountLabel" class="unread-count-badge hidden">0</span>
           </h2>
-          <label class="unread-only-wrap" id="unreadOnlyWrap" title="まだ開いていないスレッドだけを表示します">
+          <label class="unread-only-wrap" id="unreadOnlyWrap">
             <input type="checkbox" id="unreadOnlyCheck">
             <span>🆕 新着のみ表示</span>
           </label>
@@ -1294,10 +592,10 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
       <section class="bg-amber-50 border border-amber-200 p-4 rounded mb-6 shadow-sm">
         <h3 class="text-md font-bold text-gray-700 mb-2">このスレッドに書き込む</h3>
         <form id="postForm" class="space-y-3">
-          <textarea id="postContent" rows="4" placeholder="コメントを入力してください。URLは自動でリンク化されます。" maxlength="2000" class="w-full border p-2 rounded text-sm focus:ring-2 focus:ring-red-300 focus:border-red-400 outline-none"></textarea>
+          <textarea id="postContent" rows="4" placeholder="コメントを入力してください。URLは自動でリンク化されます。" maxlength="2000" class="w-full border p-2 rounded text-sm"></textarea>
           <div class="flex items-center justify-between flex-wrap gap-3">
             <div class="flex-1 min-w-[200px]">
-              <label class="block text-xs text-gray-600 mb-1">画像を添付（自動リサイズ・最大200KB）:</label>
+              <label class="block text-xs text-gray-600 mb-1">画像を添付（任意）:</label>
               <input type="file" id="fileInput" accept="image/*" class="text-xs text-gray-600 w-full">
               <div class="preview-box" id="postPreviewBox">
                 <img id="postPreviewImg" alt="プレビュー">
@@ -1322,24 +620,20 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
         <h2 class="text-xl font-bold text-gray-700">📋 掲示板</h2>
         <button onclick="showThreadList()" class="bg-gray-600 hover:bg-gray-700 text-white text-xs py-1.5 px-3 rounded transition shadow">← スレッド一覧に戻る</button>
       </div>
-
-      <div id="boardReadonlyNote" class="board-readonly-note hidden">
-        📖 掲示板は閲覧のみ可能です。投稿・編集は管理者または主、および掲示板管理権限を持つユーザーのみ行えます。
-      </div>
-
+      <div id="boardReadonlyNote" class="board-readonly-note hidden">📖 掲示板は閲覧のみ可能です。</div>
       <div id="boardFormWrapper" class="board-form-box">
         <h3 class="text-md font-bold text-gray-700 mb-2">✏️ 新しいお知らせ・イベント投稿</h3>
         <form id="boardForm" class="space-y-3">
           <div>
             <label class="block text-xs text-gray-600 mb-1">タイトル（必須）:</label>
-            <input type="text" id="boardTitle" maxlength="100" placeholder="例: 夏休みイベントのお知らせ" class="w-full border p-2 rounded text-sm focus:ring-2 focus:ring-amber-300 outline-none" required>
+            <input type="text" id="boardTitle" maxlength="100" class="w-full border p-2 rounded text-sm" required>
           </div>
           <div>
             <label class="block text-xs text-gray-600 mb-1">本文（任意）:</label>
-            <textarea id="boardContent" rows="4" maxlength="3000" placeholder="イベントの詳細などを入力..." class="w-full border p-2 rounded text-sm focus:ring-2 focus:ring-amber-300 outline-none"></textarea>
+            <textarea id="boardContent" rows="4" maxlength="3000" class="w-full border p-2 rounded text-sm"></textarea>
           </div>
           <div>
-            <label class="block text-xs text-gray-600 mb-1">画像を添付（任意・自動リサイズ）:</label>
+            <label class="block text-xs text-gray-600 mb-1">画像を添付（任意）:</label>
             <input type="file" id="boardFileInput" accept="image/*" class="text-xs text-gray-600 w-full">
             <div class="preview-box" id="boardPreviewBox">
               <img id="boardPreviewImg" alt="プレビュー">
@@ -1349,12 +643,10 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
           <button type="submit" id="boardSubmitBtn" class="board-publish-btn">📢 掲示板に投稿する</button>
         </form>
       </div>
-
       <div id="boardListContainer">
         <p class="text-gray-500 text-sm"><span class="loading-spinner"></span> 掲示板を読み込み中...</p>
       </div>
     </div>
-
   </div>
 
   <script type="module">
@@ -1398,7 +690,6 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
       "roblox.2026.20th@gmail.com"
     ];
 
-    // ===== Discord Webhook =====
     const DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1550795111246336062/c-mghw5IuTGYVVsw-xJ5ahbIs-VhZV5d7TOsbq7HWeI6nP2Rr0U__8DHZueFyDt0CZvj";
 
     async function sendDiscordApprovalNotification(email, displayName, uid, fingerprint) {
@@ -1406,28 +697,25 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
       try {
         const payload = {
           username: "シクナイちゃんねる 承認Bot",
-          embeds: [
-            {
-              title: "🔔 新しい承認待ちユーザー",
-              color: 0xb45309,
-              fields: [
-                { name: "📧 メール", value: email || "（不明）", inline: false },
-                { name: "👤 表示名", value: displayName || "（なし）", inline: true },
-                { name: "🆔 UID", value: uid ? `\`${uid}\`` : "（不明）", inline: false },
-                { name: "🖥️ フィンガープリント", value: fingerprint ? `\`${fingerprint}\`` : "（なし）", inline: false },
-                { name: "🕐 申請日時", value: new Date().toLocaleString("ja-JP", { timeZone: "Asia/Tokyo" }), inline: false }
-              ],
-              footer: { text: "シクナイちゃんねる 管理パネル" },
-              timestamp: new Date().toISOString()
-            }
-          ]
+          embeds: [{
+            title: "🔔 新しい承認待ちユーザー",
+            color: 0xb45309,
+            fields: [
+              { name: "📧 メール", value: email || "（不明）", inline: false },
+              { name: "👤 表示名", value: displayName || "（なし）", inline: true },
+              { name: "🆔 UID", value: uid ? `\`${uid}\`` : "（不明）", inline: false },
+              { name: "🖥️ フィンガープリント", value: fingerprint ? `\`${fingerprint}\`` : "（なし）", inline: false },
+              { name: "🕐 申請日時", value: new Date().toLocaleString("ja-JP", { timeZone: "Asia/Tokyo" }), inline: false }
+            ],
+            footer: { text: "シクナイちゃんねる 管理パネル" },
+            timestamp: new Date().toISOString()
+          }]
         };
         await fetch(DISCORD_WEBHOOK_URL, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(payload)
         });
-        console.log("✅ Discord承認通知を送信しました");
       } catch (err) {
         console.warn("Discord承認通知送信失敗:", err.message);
       }
@@ -1440,25 +728,22 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
         const emoji = action === "承認" ? "✅" : "🚫";
         const payload = {
           username: "シクナイちゃんねる 承認Bot",
-          embeds: [
-            {
-              title: `${emoji} ユーザー${action}`,
-              color: color,
-              fields: [
-                { name: "📧 対象メール", value: targetEmail || "（不明）", inline: false },
-                { name: "👮 実行者", value: byEmail || "（不明）", inline: false },
-                { name: "🕐 日時", value: new Date().toLocaleString("ja-JP", { timeZone: "Asia/Tokyo" }), inline: false }
-              ],
-              timestamp: new Date().toISOString()
-            }
-          ]
+          embeds: [{
+            title: `${emoji} ユーザー${action}`,
+            color: color,
+            fields: [
+              { name: "📧 対象メール", value: targetEmail || "（不明）", inline: false },
+              { name: "👮 実行者", value: byEmail || "（不明）", inline: false },
+              { name: "🕐 日時", value: new Date().toLocaleString("ja-JP", { timeZone: "Asia/Tokyo" }), inline: false }
+            ],
+            timestamp: new Date().toISOString()
+          }]
         };
         await fetch(DISCORD_WEBHOOK_URL, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(payload)
         });
-        console.log(`✅ Discord${action}通知を送信しました`);
       } catch (err) {
         console.warn(`Discord${action}通知送信失敗:`, err.message);
       }
@@ -1469,26 +754,23 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
       try {
         const payload = {
           username: "シクナイちゃんねる 警報Bot",
-          embeds: [
-            {
-              title: "🚨 手動警報が発令されました",
-              color: 0xdc2626,
-              fields: [
-                { name: "📢 発令理由", value: reason || "（理由なし）", inline: false },
-                { name: "👮 発令者", value: byEmail || "（不明）", inline: false },
-                { name: "🕐 発令日時", value: new Date().toLocaleString("ja-JP", { timeZone: "Asia/Tokyo" }), inline: false }
-              ],
-              footer: { text: "シクナイちゃんねる 手動警報" },
-              timestamp: new Date().toISOString()
-            }
-          ]
+          embeds: [{
+            title: "🚨 手動警報が発令されました",
+            color: 0xdc2626,
+            fields: [
+              { name: "📢 発令理由", value: reason || "（理由なし）", inline: false },
+              { name: "👮 発令者", value: byEmail || "（不明）", inline: false },
+              { name: "🕐 発令日時", value: new Date().toLocaleString("ja-JP", { timeZone: "Asia/Tokyo" }), inline: false }
+            ],
+            footer: { text: "シクナイちゃんねる 手動警報" },
+            timestamp: new Date().toISOString()
+          }]
         };
         await fetch(DISCORD_WEBHOOK_URL, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(payload)
         });
-        console.log("✅ Discord手動警報通知を送信しました");
       } catch (err) {
         console.warn("Discord手動警報通知送信失敗:", err.message);
       }
@@ -1546,10 +828,9 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
 
     let lockdownEnforcerInterval = null;
 
-    // ===== 新着管理用（追加） =====
-    let readThreadsCache = {};        // { threadKey: lastReadAt }
-    let allThreadsCache = [];         // ソート済みスレッド一覧
-    let unreadOnlyFilter = false;     // 新着のみ表示フィルタ
+    let readThreadsCache = {};
+    let allThreadsCache = [];
+    let unreadOnlyFilter = false;
 
     function readStorageKey(email) {
       return 'readThreads_' + (email || 'anonymous');
@@ -1579,7 +860,6 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
       if (currentUser) {
         saveReadThreads(currentUser.email, readThreadsCache);
       }
-      // 一覧を再描画して新着バッジを消す
       if (!threadListView.classList.contains('hidden')) {
         renderThreadsList();
       }
@@ -1588,8 +868,7 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
     function isThreadUnread(thread) {
       if (!thread || !thread.key) return false;
       const lastRead = readThreadsCache[thread.key];
-      if (!lastRead) return true; // 一度も開いていない
-      // スレッド作成/最終更新が既読時刻より後なら未読
+      if (!lastRead) return true;
       const lastActivity = thread.lastActivityAt || thread.createdAt || 0;
       return lastActivity > lastRead;
     }
@@ -1597,7 +876,6 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
       if (!thread || !thread.posts) return 0;
       const lastRead = readThreadsCache[thread.key];
       if (!lastRead) {
-        // 一度も開いていない場合は全レスを新着扱い（ただし自分の投稿は除外）
         let cnt = 0;
         Object.values(thread.posts).forEach(p => {
           if (p && p.authorUid !== (currentUser && currentUser.uid)) cnt++;
@@ -1650,7 +928,6 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
     const unpublishedOverlay = document.getElementById('unpublishedOverlay');
     const unpublishedSub = document.getElementById('unpublishedSub');
     const unpGoBtn = document.getElementById('unpGoBtn');
-    const publishBtn = document.getElementById('publishBtn');
     const alarmToast = document.getElementById('alarmToast');
     const alarmToastReason = document.getElementById('alarmToastReason');
     const alarmToastIssuer = document.getElementById('alarmToastIssuer');
@@ -1663,26 +940,14 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
       if (userRole === 'admin' || userRole === 'owner') return true;
       return canDo('canBackup');
     }
-
-    /**
-     * 投稿のメールアドレスを「実際に表示するか」
-     * → myEmailVisible も考慮する
-     */
     function canViewEmail() {
       if (!canToggleEmailVisibility()) return false;
       return myEmailVisible === true;
     }
-
-    /**
-     * 「メールアドレスを表示」トグルの表示可否
-     * → 役割・権限のみで判定（myEmailVisible は見ない）
-     *   admin/owner は常に表示、それ以外は canViewEmail 権限を持つ場合のみ
-     */
     function canToggleEmailVisibility() {
       if (userRole === 'admin' || userRole === 'owner') return true;
       return canDo('canViewEmail');
     }
-
     function canManageBadge() {
       if (userRole === 'admin' || userRole === 'owner') return true;
       return canDo('canManageBadge');
@@ -1713,12 +978,10 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
     function canAlarm() {
       return userRole === 'admin' || userRole === 'owner';
     }
-
     function hasBadgeFeature(uid, feature) {
       if (!uid || !feature) return false;
       return !!(badgeFeaturePermissions[uid] && badgeFeaturePermissions[uid][feature]);
     }
-
     function canDo(feature) {
       if (userRole === 'admin' || userRole === 'owner') return true;
       if (userRole === 'vip' && (feature === 'canDeletePost' || feature === 'canDeleteThread')) return true;
@@ -1789,11 +1052,17 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
       if (!email) return '';
       const lower = email.toLowerCase().trim();
       let h1 = 0x811c9dc5;
+      let h2 = 0xcbf29ce4;
       for (let i = 0; i < lower.length; i++) {
-        h1 ^= lower.charCodeAt(i);
-        h1 = Math.imul(h1, 0x01000193);
+        const c = lower.charCodeAt(i);
+        h1 ^= c; h1 = Math.imul(h1, 0x01000193);
+        h2 ^= c; h2 = Math.imul(h2, 0x01000193);
+        h2 ^= (h2 >>> 13); h2 = Math.imul(h2, 0x5bd1e995);
       }
-      return 'em_' + (h1 >>> 0).toString(16).padStart(8, '0');
+      h1 ^= lower.length; h1 = Math.imul(h1, 0x01000193);
+      h2 ^= lower.length; h2 = Math.imul(h2, 0x5bd1e995);
+      return 'em_' + (h1 >>> 0).toString(16).padStart(8, '0') +
+             (h2 >>> 0).toString(16).padStart(8, '0');
     }
 
     function badgeStorageKey(email) {
@@ -1920,17 +1189,14 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
     function executeLockdown() {
       try { window.open('', '_self').close(); } catch (e) {}
       try { window.close(); } catch (e) {}
-
       setTimeout(() => {
         try { window.location.replace('about:blank'); } catch (e) {}
       }, 120);
-
       banOverlayMsg.textContent = '緊急ロックダウン中';
       banOverlaySub.innerHTML = '現在このサイトは緊急ロックダウン中です。<br>管理者または主による解除をお待ちください。';
       banOverlayActions.style.display = 'none';
       banOverlay.classList.add('show');
       document.body.style.background = '#000';
-
       if (lockdownEnforcerInterval) clearInterval(lockdownEnforcerInterval);
       lockdownEnforcerInterval = setInterval(() => {
         if (!siteStatusCache || siteStatusCache.lockdown !== true) {
@@ -1996,8 +1262,7 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
         return;
       }
       const msgUrl = siteStatusCache.messageUrl || '';
-      unpublishedSub.innerHTML = '現在このサイトは非公開です。<br>もうしばらくお待ちください。';
-
+      unpublishedSub.innerHTML = '現在メンテナンス中です。<br>もうしばらくお待ちください。';
       if (msgUrl) {
         unpGoBtn.dataset.url = msgUrl;
         unpGoBtn.style.display = '';
@@ -2005,7 +1270,6 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
         unpGoBtn.dataset.url = '';
         unpGoBtn.style.display = 'none';
       }
-
       unpublishedOverlay.classList.add('show');
     }
     function hideUnpublishedOverlay() {
@@ -2027,12 +1291,43 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
         return false;
       }
 
-      if (bansCache && bansCache[currentUser.uid]) { executeBan(); return true; }
-      const emailKey = emailToKey(currentUser.email);
-      if (emailKey && bansCache && bansCache[emailKey]) { executeBan(); return true; }
-      if (myFingerprint && deviceBansCache && deviceBansCache[myFingerprint]) {
-        executeBan(); return true;
+      const myUid = currentUser.uid;
+      const myEmail = (currentUser.email || '').toLowerCase().trim();
+      const myEmailKey = emailToKey(currentUser.email);
+
+      if (bansCache && bansCache[myUid]) {
+        const entry = bansCache[myUid];
+        if (!entry.email || entry.email.toLowerCase().trim() === myEmail) {
+          console.log('UID BAN検知:', myUid, entry);
+          executeBan();
+          return true;
+        } else {
+          console.warn('UID BANエントリのメール不一致のためスキップ:', myUid, entry.email, 'vs', myEmail);
+        }
       }
+
+      if (myEmailKey && bansCache && bansCache[myEmailKey]) {
+        const entry = bansCache[myEmailKey];
+        if (!entry.email || entry.email.toLowerCase().trim() === myEmail) {
+          console.log('メール BAN検知:', currentUser.email, entry);
+          executeBan();
+          return true;
+        } else {
+          console.warn('emailKey BANエントリのメール不一致（ハッシュ衝突救済）:', myEmailKey, entry.email, 'vs', myEmail);
+        }
+      }
+
+      if (myFingerprint && deviceBansCache && deviceBansCache[myFingerprint]) {
+        const entry = deviceBansCache[myFingerprint];
+        if (entry && entry.bannedBy === 'SYSTEM_DEVICE_LINK') {
+          console.warn('自動連鎖由来のデバイスBANを無視:', myFingerprint, entry);
+        } else {
+          console.log('デバイス BAN検知:', myFingerprint, entry);
+          executeBan();
+          return true;
+        }
+      }
+
       return false;
     }
 
@@ -2040,45 +1335,24 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
       if (!user || !currentFingerprint) return false;
 
       const role = roleFromEmail(user.email);
-      if (role === 'admin' || role === 'owner') {
-        console.log('管理者/主のため端末BAN連鎖チェックをスキップ:', user.email);
-        return false;
-      }
-      if (isProtectedEmail(user.email)) {
-        console.log('保護対象メールのため端末BAN連鎖チェックをスキップ:', user.email);
-        return false;
-      }
+      if (role === 'admin' || role === 'owner') return false;
+      if (isProtectedEmail(user.email)) return false;
+
+      const myUid = user.uid;
+      const myEmailKey = emailToKey(user.email);
+      const selfBannedByUid = !!(bansCache && bansCache[myUid]);
+      const selfBannedByEmail = !!(bansCache && myEmailKey && bansCache[myEmailKey]);
+
+      if (!selfBannedByUid && !selfBannedByEmail) return false;
 
       try {
         const deviceBanSnap = await get(ref(db, `deviceBans/${currentFingerprint}`));
-        if (!deviceBanSnap.exists()) {
-          return false;
-        }
-
-        const now = Date.now();
-        const banData = {
-          bannedAt: now,
-          bannedBy: "SYSTEM_DEVICE_LINK",
-          reason: "BAN済み端末からのアクセス検知（アカウント切り替え）",
-          email: user.email || "",
-          uid: user.uid
-        };
-
-        const updates = {};
-        updates[`bans/${user.uid}`] = banData;
-
-        if (user.email) {
-          const ek = emailToKey(user.email);
-          if (ek) updates[`bans/${ek}`] = banData;
-        }
-
-        await update(ref(db), updates);
-        console.log('端末BAN連鎖: このアカウントもBAN登録しました', user.email);
-
+        if (!deviceBanSnap.exists()) return false;
+        console.log('端末BAN検知（自分自身もBAN済み）:', currentFingerprint);
         return true;
       } catch (err) {
-        console.error('端末BAN連鎖エラー:', err);
-        return true;
+        console.error('端末BAN確認エラー（BANしません）:', err);
+        return false;
       }
     }
 
@@ -2198,15 +1472,9 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
       });
     })();
 
-    document.addEventListener('contextmenu', (e) => {
-      e.preventDefault();
-      return false;
-    });
-
+    document.addEventListener('contextmenu', (e) => { e.preventDefault(); return false; });
     document.addEventListener('selectstart', (e) => {
-      if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA' || e.target.isContentEditable) {
-        return true;
-      }
+      if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA' || e.target.isContentEditable) return true;
       e.preventDefault();
       return false;
     });
@@ -2217,10 +1485,7 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
       }
     });
     document.addEventListener('mouseup', (e) => {
-      if (e.button === 2) {
-        e.preventDefault();
-        return false;
-      }
+      if (e.button === 2) { e.preventDefault(); return false; }
     });
 
     let badgeFeatureUnsubscribe = null;
@@ -2230,12 +1495,10 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
       const featureRef = ref(db, 'badgeFeatures');
       badgeFeatureUnsubscribe = onValue(featureRef, (snap) => {
         badgeFeaturePermissions = snap.exists() ? snap.val() : {};
-        console.log('バッジ機能権限更新:', badgeFeaturePermissions);
         if (currentThreadKey) renderPostsFromCache();
         updateAdminControlsVisibility();
         updateBoardEditability();
         updateMyBadgeToggleVisibility();
-        // バッジ機能で canViewEmail が変わる可能性があるのでトグルも更新
         updateEmailToggleVisibility();
       }, (err) => {
         console.error('バッジ機能権限監視エラー:', err);
@@ -2268,10 +1531,6 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
       }
     }
 
-    /**
-     * 「メールアドレスを表示」トグルの表示/非表示を更新
-     * → 役割・権限ベース（myEmailVisible は見ない）
-     */
     function updateEmailToggleVisibility() {
       if (!currentUser) {
         emailToggleWrap.classList.add('hidden');
@@ -2317,48 +1576,27 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
       const showLockdown = canLockdown();
       const showAlarm = canAlarm();
 
-      if (showAlarm) {
-        alarmBtn.classList.remove('hidden');
-        updateAlarmBtnUI();
-      } else {
-        alarmBtn.classList.add('hidden');
-      }
+      if (showAlarm) { alarmBtn.classList.remove('hidden'); updateAlarmBtnUI(); }
+      else alarmBtn.classList.add('hidden');
 
-      if (showLockdown) {
-        lockdownBtn.classList.remove('hidden');
-        updateLockdownBtnUI();
-      } else {
-        lockdownBtn.classList.add('hidden');
-      }
+      if (showLockdown) { lockdownBtn.classList.remove('hidden'); updateLockdownBtnUI(); }
+      else lockdownBtn.classList.add('hidden');
 
       if (showPending) pendingBtn.classList.remove('hidden');
       else pendingBtn.classList.add('hidden');
 
-      if (showBackup) {
-        backupBtn.classList.remove('hidden');
-        restoreBtn.classList.remove('hidden');
-      } else {
-        backupBtn.classList.add('hidden');
-        restoreBtn.classList.add('hidden');
-      }
+      if (showBackup) { backupBtn.classList.remove('hidden'); restoreBtn.classList.remove('hidden'); }
+      else { backupBtn.classList.add('hidden'); restoreBtn.classList.add('hidden'); }
 
-      if (showBan) {
-        banListBtn.classList.remove('hidden');
-        userListBtn.classList.remove('hidden');
-      } else {
-        banListBtn.classList.add('hidden');
-        userListBtn.classList.add('hidden');
-      }
+      if (showBan) { banListBtn.classList.remove('hidden'); userListBtn.classList.remove('hidden'); }
+      else { banListBtn.classList.add('hidden'); userListBtn.classList.add('hidden'); }
 
       if (showPublish) publishBtnEl.classList.remove('hidden');
       else publishBtnEl.classList.add('hidden');
 
       const anyVisible = showPending || showBackup || showBan || showPublish || showLockdown || showAlarm;
-      if (anyVisible) {
-        adminControls.classList.remove('hidden');
-      } else {
-        adminControls.classList.add('hidden');
-      }
+      if (anyVisible) adminControls.classList.remove('hidden');
+      else adminControls.classList.add('hidden');
     }
 
     function updateLockdownBtnUI() {
@@ -2388,12 +1626,9 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
     }
 
     window.openAlarmModal = function() {
-      if (!canAlarm()) {
-        alert('この操作は管理者または主のみ可能です。');
-        return;
-      }
+      if (!canAlarm()) { alert('この操作は管理者または主のみ可能です。'); return; }
       if (siteStatusCache.alarm === true) {
-        if (!confirm('🚨 警報を解除しますか？\n\n全ユーザーの警報トーストが消えます。')) return;
+        if (!confirm('🚨 警報を解除しますか？')) return;
         releaseAlarm();
         return;
       }
@@ -2417,14 +1652,7 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
     document.getElementById('alarmFireBtn').addEventListener('click', async () => {
       if (!canAlarm()) { alert('この操作は管理者または主のみ可能です。'); return; }
       const reason = document.getElementById('alarmReasonInput').value.trim();
-
-      if (!confirm(
-        '🚨【手動警報を発令】🚨\n\n' +
-        '全ユーザー（未ログイン含む）の画面右上に警報トーストを表示します。\n' +
-        '管理者・主は影響を受けません。\n\n' +
-        '本当に発令しますか？'
-      )) return;
-
+      if (!confirm('🚨【手動警報を発令】🚨\n\n全ユーザーの画面右上に警報トーストを表示します。\n本当に発令しますか？')) return;
       try {
         await set(ref(db, 'siteStatus'), {
           published: siteStatusCache.published !== false,
@@ -2439,7 +1667,6 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
         });
         closeAlarmModal();
         showBanner('🚨 手動警報を発令しました', false);
-
         sendDiscordAlarmNotification(reason || '緊急対応', currentUser ? currentUser.email : '管理者');
       } catch (err) {
         console.error('警報発令エラー:', err);
@@ -2471,24 +1698,14 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
     }
 
     window.toggleLockdown = async function() {
-      if (!canLockdown()) {
-        alert('この操作は管理者または主のみ可能です。');
-        return;
-      }
+      if (!canLockdown()) { alert('この操作は管理者または主のみ可能です。'); return; }
       const isOn = siteStatusCache && siteStatusCache.lockdown === true;
       const newState = !isOn;
-
       if (newState === true) {
-        if (!confirm(
-          '🚨【緊急ロックダウン】🚨\n\n' +
-          '管理者・主以外のすべてのユーザー（未ログイン含む）を\n' +
-          '強制タブ削除または about:blank へ遷移させます。\n\n' +
-          '本当に実行しますか？'
-        )) return;
+        if (!confirm('🚨【緊急ロックダウン】🚨\n\n管理者・主以外の全ユーザーを強制切断します。\n本当に実行しますか？')) return;
       } else {
         if (!confirm('ロックダウンを解除しますか？')) return;
       }
-
       try {
         await set(ref(db, 'siteStatus'), {
           published: siteStatusCache.published !== false,
@@ -2526,15 +1743,12 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
       const container = document.getElementById('boardListContainer');
       if (!container) return;
       container.innerHTML = '';
-
       const entries = Object.entries(boardCache || {});
       if (entries.length === 0) {
         container.innerHTML = '<p class="text-gray-400 text-sm">まだ投稿がありません。</p>';
         return;
       }
-
       entries.sort((a, b) => (b[1].createdAt || 0) - (a[1].createdAt || 0));
-
       entries.forEach(([key, item]) => {
         if (!item) return;
         const date = item.createdAt ? new Date(item.createdAt).toLocaleString('ja-JP') : '不明';
@@ -2555,10 +1769,7 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
         const delBtn = card.querySelector('.board-delete-btn');
         if (delBtn) {
           delBtn.addEventListener('click', async () => {
-            if (!canManageBoard()) {
-              alert('掲示板管理権限がありません。');
-              return;
-            }
+            if (!canManageBoard()) { alert('掲示板管理権限がありません。'); return; }
             if (!confirm('この投稿を削除しますか？')) return;
             try {
               await remove(ref(db, `board/${key}`));
@@ -2589,26 +1800,18 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
     document.getElementById('boardForm').addEventListener('submit', async (e) => {
       e.preventDefault();
       if (!currentUser) { alert('ログインが必要です。'); return; }
-      if (!canManageBoard()) {
-        alert('掲示板管理権限がありません。');
-        return;
-      }
-
+      if (!canManageBoard()) { alert('掲示板管理権限がありません。'); return; }
       const title = document.getElementById('boardTitle').value.trim();
       const content = document.getElementById('boardContent').value.trim();
       const fileInput = document.getElementById('boardFileInput');
       const file = fileInput.files[0];
       const btn = document.getElementById('boardSubmitBtn');
-
       if (!title) { alert('タイトルを入力してください。'); return; }
-
       btn.disabled = true;
       btn.textContent = file ? '画像処理中...' : '投稿中...';
-
       try {
         let fileData = null;
         if (file) fileData = await fileToBase64Image(file);
-
         const boardRef = ref(db, 'board');
         const newRef = push(boardRef);
         await set(newRef, {
@@ -2619,7 +1822,6 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
           authorUid: currentUser.uid,
           createdAt: Date.now()
         });
-
         document.getElementById('boardForm').reset();
         document.getElementById('boardPreviewBox').classList.remove('show');
         showBanner('掲示板に投稿しました', false);
@@ -2678,7 +1880,6 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
 
     window.doLogout = async function() {
       intentionalSignOut = true;
-      // 既読情報を保存
       if (currentUser) {
         saveReadThreads(currentUser.email, readThreadsCache);
       }
@@ -2730,23 +1931,15 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
           alarmBy: val.alarmBy || '',
           alarmAt: val.alarmAt || 0
         };
-        console.log('サイト公開状態更新:', siteStatusCache);
-
         updateLockdownBtnUI();
         updateAlarmBtnUI();
         updatePublishModalUI();
-
-        if (checkAndApplyLockdown()) {
-          return;
-        }
-
+        if (checkAndApplyLockdown()) return;
         checkAndApplyAlarm();
-
         if (isCurrentUserProtected()) {
           hideUnpublishedOverlay();
           return;
         }
-
         if (siteStatusCache.published === false) {
           showUnpublishedOverlay();
         } else {
@@ -2850,7 +2043,6 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
     async function registerMyFingerprint() {
       if (!currentUser || !myFingerprint) return;
       const now = Date.now();
-
       try {
         await update(ref(db, `userDevices/${currentUser.uid}`), {
           [myFingerprint]: now
@@ -2858,12 +2050,10 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
       } catch (e) {
         console.warn('フィンガープリント登録スキップ:', e.message);
       }
-
       try {
         const userRef = ref(db, `knownUsers/${currentUser.uid}`);
         const existingSnap = await get(userRef);
         const existing = existingSnap.exists() ? existingSnap.val() : null;
-
         const data = {
           email: currentUser.email || '',
           displayName: currentUser.displayName || '',
@@ -2883,27 +2073,21 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
       try {
         const approvedSnap = await get(ref(db, `approvedUsers/${currentUser.uid}`));
         if (approvedSnap.exists()) return;
-
         const pendingSnap = await get(ref(db, `pendingUsers/${currentUser.uid}`));
         const alreadyPending = pendingSnap.exists();
-
         await set(ref(db, `pendingUsers/${currentUser.uid}`), {
           email: currentUser.email || '',
           displayName: currentUser.displayName || '',
           requestedAt: Date.now(),
           fingerprint: myFingerprint || ''
         });
-
         if (!alreadyPending) {
-          console.log('新規承認申請 → Discord通知を送信します:', currentUser.email);
           await sendDiscordApprovalNotification(
             currentUser.email || '',
             currentUser.displayName || '',
             currentUser.uid,
             myFingerprint || ''
           );
-        } else {
-          console.log('既に承認待ちのためDiscord通知はスキップ:', currentUser.email);
         }
       } catch (e) {
         console.warn('承認申請スキップ:', e.message);
@@ -2916,20 +2100,16 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
         userRole = null;
         return;
       }
-
       currentUser = user;
 
       if (!user) {
         userRole = null;
         initSiteStatusListener();
-
         if (!initialAuthCheckDone) {
           trySilentSignIn();
           return;
         }
-
         if (checkAndApplyLockdown()) return;
-
         hideBootOverlay();
         showLoginView();
         hideUnpublishedOverlay();
@@ -2941,12 +2121,25 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
       myBadgePublic = loadBadgeVisibility(user.email);
       myEmailVisible = loadEmailVisibility(user.email);
       myFingerprint = generateFingerprint();
-
-      // ===== 既読情報を読み込み（追加） =====
       readThreadsCache = loadReadThreads(user.email);
 
       initSiteStatusListener();
       initBadgeFeatureListener();
+
+      try {
+        const bansSnap = await get(ref(db, 'bans'));
+        bansCache = bansSnap.exists() ? bansSnap.val() : {};
+      } catch (e) {
+        console.warn('bans初期取得失敗:', e.message);
+        bansCache = {};
+      }
+      try {
+        const devSnap = await get(ref(db, 'deviceBans'));
+        deviceBansCache = devSnap.exists() ? devSnap.val() : {};
+      } catch (e) {
+        console.warn('deviceBans初期取得失敗:', e.message);
+        deviceBansCache = {};
+      }
 
       try {
         const initSiteSnap = await get(ref(db, 'siteStatus'));
@@ -2974,13 +2167,13 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
         hideUnpublishedOverlay();
         checkAndApplyAlarm();
       } else {
-        const isDeviceBanned = await checkAndApplyDeviceBan(user, myFingerprint);
-        if (isDeviceBanned) {
+        if (checkSelfBan()) return;
+
+        const deviceBanned = await checkAndApplyDeviceBan(user, myFingerprint);
+        if (deviceBanned) {
           executeBan();
           return;
         }
-
-        if (checkSelfBan()) return;
 
         initBansListener();
         initDeviceBansListener();
@@ -2996,7 +2189,6 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
       }
 
       const isApproved = checkSelfApproval();
-
       if (!isApproved) {
         await requestApproval();
         executePending();
@@ -3004,7 +2196,6 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
       }
 
       userApproved = true;
-
       updateMyBadgeToggleVisibility();
       updateEmailToggleVisibility();
       renderRoleBadge(userRole);
@@ -3058,9 +2249,7 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
       const visible = badgeToggle.checked;
       saveBadgeVisibility(currentUser.email, visible);
       myBadgePublic = visible;
-
       showBanner('バッジ表示を更新中...', false);
-
       try {
         const snap = await get(ref(db, 'threads'));
         if (snap.exists()) {
@@ -3095,10 +2284,8 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
       const visible = emailToggle.checked;
       saveEmailVisibility(currentUser.email, visible);
       myEmailVisible = visible;
-
       if (currentThreadKey) renderPostsFromCache();
       refreshThreadAuthorDisplay();
-
       showBanner(visible ? 'メールアドレスを表示します' : 'メールアドレスを非表示にしました', false);
     });
 
@@ -3121,7 +2308,6 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
       updatePreview(document.getElementById('fileInput'), 'postPreviewBox', 'postPreviewImg', 'postPreviewInfo');
     });
 
-    // 新着のみフィルタのチェックボックス
     document.getElementById('unreadOnlyCheck').addEventListener('change', (e) => {
       unreadOnlyFilter = e.target.checked;
       renderThreadsList();
@@ -3138,7 +2324,6 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
       activeReplyParentId = null;
       if (postsUnsubscribe) { postsUnsubscribe(); postsUnsubscribe = null; }
       postsContainer.innerHTML = '<p class="text-gray-500 text-sm">読み込み中...</p>';
-      // 一覧を再描画（新着状態を反映）
       if (allThreadsCache.length > 0) renderThreadsList();
     };
 
@@ -3149,24 +2334,18 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
       activeReplyParentId = null;
       document.getElementById('currentThreadTitle').innerText = title;
       document.getElementById('currentThreadDate').innerText = '作成日時: ' + createdAt;
-
       refreshThreadAuthorDisplay();
-
       const delBtn = document.getElementById('deleteThreadBtn');
       if (canDelete() || canDo('canDeleteThread')) {
         delBtn.classList.remove('hidden');
       } else {
         delBtn.classList.add('hidden');
       }
-
       threadListView.classList.add('hidden');
       threadDetailView.classList.remove('hidden');
       boardView.classList.add('hidden');
       backToListBtn.classList.remove('hidden');
-
-      // ===== スレッドを開いた瞬間に既読化（追加） =====
       markThreadAsRead(threadKey);
-
       loadPosts(threadKey);
     }
 
@@ -3174,18 +2353,14 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
       e.preventDefault();
       if (!currentUser) { alert('ログインが必要です。'); return; }
       if (checkSelfBan()) return;
-
       const title = document.getElementById('threadTitle').value.trim();
       const content = document.getElementById('firstPostContent').value.trim();
       const fileInput = document.getElementById('threadFileInput');
       const file = fileInput.files[0];
       const btn = document.getElementById('createThreadBtn');
-
       if (!title) { alert('スレッドタイトルを入力してください。'); return; }
-
       btn.disabled = true;
       btn.innerText = file ? '画像処理中...' : '作成中...';
-
       const tempKey = 'temp_' + Date.now();
       const tempItem = document.createElement('div');
       tempItem.id = 'optimistic_thread_' + tempKey;
@@ -3196,18 +2371,14 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
           <span class="text-xs text-gray-400 ml-2 whitespace-nowrap">(送信中...)</span>
         </div>`;
       threadsContainer.prepend(tempItem);
-
       try {
         let fileData = null;
         if (file) fileData = await fileToBase64Image(file);
-
         document.getElementById('createThreadForm').reset();
         document.getElementById('threadPreviewBox').classList.remove('show');
-
         const threadsRef = ref(db, 'threads');
         const newThreadRef = push(threadsRef);
         const threadKey = newThreadRef.key;
-
         const threadData = {
           title: title,
           createdAt: Date.now(),
@@ -3216,9 +2387,7 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
           authorUid: currentUser.uid,
           authorRole: userRole || null
         };
-
         const writes = [set(newThreadRef, threadData)];
-
         if (content || fileData) {
           const postRef = push(ref(db, `threads/${threadKey}/posts`));
           writes.push(set(postRef, {
@@ -3233,7 +2402,6 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
             file: fileData
           }));
         }
-
         await Promise.all(writes);
         showBanner('スレッドを保存しました', false);
         const tempEl = document.getElementById('optimistic_thread_' + tempKey);
@@ -3252,20 +2420,16 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
 
     function initThreadsListener() {
       if (threadsUnsubscribe) threadsUnsubscribe();
-
       const threadsRef = ref(db, 'threads');
       const q = query(threadsRef, orderByChild('createdAt'));
-
       threadsUnsubscribe = onValue(q, (snapshot) => {
         setConnection(true);
-
         if (!snapshot.exists()) {
           allThreadsCache = [];
           threadsContainer.innerHTML = '<p class="text-gray-500 text-sm">スレッドがありません。新しく作成してください。</p>';
           updateUnreadCountLabel();
           return;
         }
-
         const threads = [];
         snapshot.forEach((child) => {
           const val = child.val() || {};
@@ -3282,50 +2446,40 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
           });
         });
         threads.sort((a, b) => (b.createdAt || 0) - (a.createdAt || 0));
-
         allThreadsCache = threads;
         renderThreadsList();
       }, (error) => {
         console.error("スレッド一覧の取得エラー:", error);
         setConnection(false);
-        threadsContainer.innerHTML =
-          '<p class="text-red-500 text-sm">スレッド一覧の読み込みに失敗しました。<br>' +
-          'Realtime Database のルールを確認してください。</p>';
+        threadsContainer.innerHTML = '<p class="text-red-500 text-sm">スレッド一覧の読み込みに失敗しました。</p>';
         showBanner('読み込み失敗: ' + (error.code || error.message), true);
       });
     }
 
-    // ===== スレッド一覧描画（新着対応・追加） =====
     function renderThreadsList() {
       threadsContainer.innerHTML = '';
-
       if (!allThreadsCache || allThreadsCache.length === 0) {
         threadsContainer.innerHTML = '<p class="text-gray-500 text-sm">スレッドがありません。新しく作成してください。</p>';
         updateUnreadCountLabel();
         return;
       }
-
       let list = allThreadsCache;
       if (unreadOnlyFilter) {
         list = list.filter(t => isThreadUnread(t));
       }
-
       if (list.length === 0) {
         threadsContainer.innerHTML = '<p class="text-gray-500 text-sm">新着スレッドはありません。</p>';
         updateUnreadCountLabel();
         return;
       }
-
       list.forEach((thread) => {
         let date = '日時不明';
         if (thread.createdAt) {
           try { date = new Date(thread.createdAt).toLocaleString('ja-JP'); }
           catch (e) { date = '日時不明'; }
         }
-
         const unread = isThreadUnread(thread);
         const unreadPosts = getUnreadPostCount(thread);
-
         const item = document.createElement('div');
         item.className = 'bg-white p-3 border border-gray-300 rounded hover:bg-amber-50 cursor-pointer transition flex justify-between items-center shadow-sm' +
           (unread ? ' thread-item-unread' : '');
@@ -3340,37 +2494,30 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
           <span class="text-xs bg-gray-200 text-gray-700 px-2 py-1 rounded-full ml-2 whitespace-nowrap">開く</span>`;
         threadsContainer.appendChild(item);
       });
-
       updateUnreadCountLabel();
     }
 
     function loadPosts(threadKey) {
       if (postsUnsubscribe) { postsUnsubscribe(); postsUnsubscribe = null; }
       postsContainer.innerHTML = '<p class="text-gray-500 text-sm"><span class="loading-spinner"></span> 読み込み中...</p>';
-
       const postsRef = ref(db, `threads/${threadKey}/posts`);
       const q = query(postsRef, orderByChild('createdAt'));
-
       postsUnsubscribe = onValue(q, (snapshot) => {
         setConnection(true);
-
         if (!snapshot.exists()) {
           allPostsCache = [];
           postNumberMap = new Map();
           postsContainer.innerHTML = '<p class="text-gray-500 text-sm">まだ書き込みがありません。</p>';
           return;
         }
-
         const posts = [];
         snapshot.forEach((child) => {
           posts.push({ key: child.key, ...child.val() });
         });
         posts.sort((a, b) => (a.createdAt || 0) - (b.createdAt || 0));
         allPostsCache = posts;
-
         postNumberMap = new Map();
         posts.forEach((p, i) => postNumberMap.set(p.key, i + 1));
-
         renderPostsFromCache();
       }, (error) => {
         console.error("レス読み込みエラー:", error);
@@ -3382,17 +2529,14 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
 
     function renderPostsFromCache() {
       postsContainer.innerHTML = '';
-
       if (allPostsCache.length === 0) {
         postsContainer.innerHTML = '<p class="text-gray-500 text-sm">まだ書き込みがありません。</p>';
         return;
       }
-
       const posts = allPostsCache;
       const childrenMap = new Map();
       const rootPosts = [];
       const keySet = new Set(posts.map(p => p.key));
-
       posts.forEach((p) => {
         let pid = p.parentId || null;
         if (pid && !keySet.has(pid)) pid = null;
@@ -3403,11 +2547,9 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
           childrenMap.get(pid).push(p);
         }
       });
-
       const frag = document.createDocumentFragment();
       rootPosts.forEach((p) => frag.appendChild(renderPostTree(p, childrenMap)));
       postsContainer.appendChild(frag);
-
       if (activeReplyParentId && keySet.has(activeReplyParentId)) {
         openReplyBox(activeReplyParentId);
       } else {
@@ -3470,13 +2612,10 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
 
       const roleBadgeHtml = buildPostRoleBadge(post);
       const customBadgeHtml = buildPostCustomBadge(post);
-
       const isBanned = isPostBanned(post);
       const bannedMark = isBanned ? `<span class="banned-mark">BAN中</span>` : '';
-
       const isProtected = post.authorUid && isProtectedUid(post.authorUid);
 
-      // ===== 新着レス判定（追加） =====
       let newPostBadge = '';
       if (post.createdAt && currentThreadKey) {
         const lastRead = readThreadsCache[currentThreadKey];
@@ -3575,33 +2714,20 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
       if (!canBan()) { alert('BAN権限がありません。'); return; }
       if (!uid && !email) return;
 
-      if (isProtectedEmail(email)) {
-        alert('管理者および主はBANできません。');
-        return;
-      }
-      if (uid && isProtectedUid(uid)) {
-        alert('管理者および主はBANできません。');
-        return;
-      }
+      if (isProtectedEmail(email)) { alert('管理者および主はBANできません。'); return; }
+      if (uid && isProtectedUid(uid)) { alert('管理者および主はBANできません。'); return; }
       if (uid) {
         const u1 = knownUsersCache[uid];
-        if (u1 && u1.email && isProtectedEmail(u1.email)) {
-          alert('管理者および主はBANできません。');
-          return;
-        }
+        if (u1 && u1.email && isProtectedEmail(u1.email)) { alert('管理者および主はBANできません。'); return; }
         const u2 = approvedCache[uid];
-        if (u2 && u2.email && isProtectedEmail(u2.email)) {
-          alert('管理者および主はBANできません。');
-          return;
-        }
+        if (u2 && u2.email && isProtectedEmail(u2.email)) { alert('管理者および主はBANできません。'); return; }
       }
 
       if (action === 'ban') {
         if (!confirm(
           `このユーザーをBANしますか？\n\n対象: ${email || '（メール不明）'}\nUID: ${uid}\n\n` +
           `・UID・メール・デバイスの3つでブロックします。\n` +
-          `・同じデバイスを使っている他のアカウントもBANされます。\n` +
-          `・BANされたユーザーは次にサイトを開いた瞬間にタブが閉じられます。`
+          `・同じデバイスを使っている他のアカウントもBANされます。`
         )) return;
         try {
           const now = Date.now();
@@ -3611,7 +2737,6 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
             email: email || '',
             uid: uid || ''
           };
-
           const ops = [];
           if (uid) ops.push(set(ref(db, `bans/${uid}`), data));
           if (email) {
@@ -3641,7 +2766,6 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
               console.warn('デバイスBAN登録スキップ:', e.message);
             }
           }
-
           showBanner('BANしました（同じデバイスの他アカウントも対象）', false);
         } catch (err) {
           console.error('BANエラー:', err);
@@ -3662,7 +2786,6 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
               console.warn('デバイス取得スキップ:', e.message);
             }
           }
-
           const ops = [];
           if (uid) ops.push(remove(ref(db, `bans/${uid}`)));
           if (email) {
@@ -3673,7 +2796,6 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
             ops.push(remove(ref(db, `deviceBans/${fp}`)));
           });
           await Promise.all(ops);
-
           showBanner('BANを解除しました（関連デバイス含む）', false);
         } catch (err) {
           console.error('BAN解除エラー:', err);
@@ -3706,7 +2828,6 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
 
     function renderBanList() {
       banListContainer.innerHTML = '';
-
       const entries = Object.entries(bansCache || {});
       const byUid = {};
       const byEmailKey = {};
@@ -3766,23 +2887,16 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
       if (!canBan()) { alert('BAN管理権限がありません。'); return; }
       const email = banEmailInput.value.trim().toLowerCase();
       const reason = banReasonInput.value.trim();
-
       if (!email) { alert('メールアドレスを入力してください。'); return; }
       if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
         alert('メールアドレスの形式が正しくありません。');
         return;
       }
-
       if (currentUser && currentUser.email && currentUser.email.toLowerCase() === email) {
         alert('自分自身はBANできません。');
         return;
       }
-
-      if (isProtectedEmail(email)) {
-        alert('管理者および主はBANできません。');
-        return;
-      }
-
+      if (isProtectedEmail(email)) { alert('管理者および主はBANできません。'); return; }
       if (!confirm(`${email} をBANしますか？\n\nこのメールアドレスでログインしようとした人は即座にブロックされます。`)) return;
 
       try {
@@ -3794,20 +2908,15 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
           email: email,
           reason: reason || ''
         };
-
         const ops = [];
         if (ek) ops.push(set(ref(db, `bans/${ek}`), data));
 
         const targetUids = new Set();
         Object.entries(knownUsersCache || {}).forEach(([uid, u]) => {
-          if (u && u.email && u.email.toLowerCase() === email) {
-            targetUids.add(uid);
-          }
+          if (u && u.email && u.email.toLowerCase() === email) targetUids.add(uid);
         });
         Object.entries(approvedCache || {}).forEach(([uid, u]) => {
-          if (u && u.email && u.email.toLowerCase() === email) {
-            targetUids.add(uid);
-          }
+          if (u && u.email && u.email.toLowerCase() === email) targetUids.add(uid);
         });
 
         targetUids.forEach((tu) => {
@@ -3822,36 +2931,106 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
 
         await Promise.all(ops);
 
-        for (const tu of targetUids) {
-          try {
-            const devSnap = await get(ref(db, `userDevices/${tu}`));
-            if (devSnap.exists()) {
-              const devOps = [];
-              devSnap.forEach((child) => {
-                const fp = child.key;
-                if (currentUser && myFingerprint && fp === myFingerprint) return;
-                devOps.push(set(ref(db, `deviceBans/${fp}`), {
-                  bannedAt: now,
-                  bannedBy: currentUser.email,
-                  email: email,
-                  uid: tu
-                }));
-              });
-              if (devOps.length > 0) await Promise.all(devOps);
+        if (banDeviceCheck.checked) {
+          for (const tu of targetUids) {
+            try {
+              const devSnap = await get(ref(db, `userDevices/${tu}`));
+              if (devSnap.exists()) {
+                const devOps = [];
+                devSnap.forEach((child) => {
+                  const fp = child.key;
+                  if (currentUser && myFingerprint && fp === myFingerprint) return;
+                  devOps.push(set(ref(db, `deviceBans/${fp}`), {
+                    bannedAt: now,
+                    bannedBy: currentUser.email,
+                    email: email,
+                    uid: tu
+                  }));
+                });
+                if (devOps.length > 0) await Promise.all(devOps);
+              }
+            } catch (e) {
+              console.warn('デバイスBAN登録スキップ:', e.message);
             }
-          } catch (e) {
-            console.warn('デバイスBAN登録スキップ:', e.message);
           }
         }
 
         banEmailInput.value = '';
         banReasonInput.value = '';
-        showBanner('メールアドレスをBANしました（同じデバイスの他アカウントも対象）', false);
+        showBanner('メールアドレスをBANしました', false);
         renderBanList();
       } catch (err) {
         console.error('BANエラー:', err);
         showBanner('BAN失敗: ' + (err.code || err.message), true);
         alert('BANに失敗しました。');
+      }
+    });
+
+    // 🔓 全BAN強制解除（管理者・主のみ）
+    document.getElementById('forceUnbanAllBtn').addEventListener('click', async () => {
+      if (!canBan()) { alert('BAN管理権限がありません。'); return; }
+
+      if (!confirm(
+        '🔓【全BAN強制解除】🔓\n\n' +
+        '現在BANされている全ユーザーのBANを一括解除します。\n' +
+        'bans / deviceBans を完全に空にします。\n\n' +
+        'この操作は取り消せません。本当に実行しますか？'
+      )) return;
+
+      const doubleCheck = prompt(
+        '確認のため「UNBAN ALL」と入力してください（大文字・半角・スペース含む）:'
+      );
+      if (doubleCheck !== 'UNBAN ALL') {
+        alert('キャンセルしました。');
+        return;
+      }
+
+      const btn = document.getElementById('forceUnbanAllBtn');
+      btn.disabled = true;
+      const originalText = btn.textContent;
+      btn.textContent = '解除中...';
+
+      try {
+        await update(ref(db), {
+          'bans': null,
+          'deviceBans': null
+        });
+        showBanner('✅ 全BANを強制解除しました', false);
+        alert('全BANを強制解除しました。\n\nページを再読み込みします。');
+        setTimeout(() => { location.reload(); }, 500);
+      } catch (err) {
+        console.error('全BAN解除エラー:', err);
+        showBanner('全BAN解除失敗: ' + (err.code || err.message), true);
+        alert('全BAN解除に失敗しました。\n' + (err.message || ''));
+        btn.disabled = false;
+        btn.textContent = originalText;
+      }
+    });
+
+    // 🧹 自動連鎖BANのクリーンアップ
+    document.getElementById('cleanupAutoBansBtn').addEventListener('click', async () => {
+      if (!canBan()) { alert('BAN管理権限がありません。'); return; }
+      if (!confirm('自動連鎖（SYSTEM_DEVICE_LINK）で登録されたBANを一括削除しますか？\n\n（明示的なBANは残ります）')) return;
+      try {
+        const snap = await get(ref(db, 'bans'));
+        if (!snap.exists()) { alert('BANはありません。'); return; }
+        const updates = {};
+        let removed = 0;
+        snap.forEach((child) => {
+          const v = child.val();
+          if (v && v.bannedBy === 'SYSTEM_DEVICE_LINK') {
+            updates[`bans/${child.key}`] = null;
+            removed++;
+          }
+        });
+        if (removed === 0) { alert('自動連鎖BANは見つかりませんでした。'); return; }
+        await update(ref(db), updates);
+        alert(`自動連鎖BANを ${removed} 件削除しました。`);
+        showBanner(`自動連鎖BANを ${removed} 件削除しました`, false);
+        renderBanList();
+      } catch (err) {
+        console.error('クリーンアップエラー:', err);
+        alert('クリーンアップに失敗しました。');
       }
     });
 
@@ -3937,7 +3116,6 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
       }
 
       filtered.sort((a, b) => (b.lastSeen || 0) - (a.lastSeen || 0));
-
       userCountLabel.textContent = filtered.length;
 
       if (filtered.length === 0) {
@@ -3948,14 +3126,11 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
       filtered.forEach((u) => {
         const lastSeenDate = u.lastSeen ? new Date(u.lastSeen).toLocaleString('ja-JP') : '不明';
         const firstSeenDate = u.firstSeen ? new Date(u.firstSeen).toLocaleString('ja-JP') : '不明';
-
         const isBannedByUid = !!bansCache[u.uid];
         const ek = emailToKey(u.email);
         const isBannedByEmail = ek ? !!bansCache[ek] : false;
         const isBanned = isBannedByUid || isBannedByEmail;
-
-        const isProtected = (u.role === 'admin') || (u.role === 'owner') ||
-                            isProtectedEmail(u.email);
+        const isProtected = (u.role === 'admin') || (u.role === 'owner') || isProtectedEmail(u.email);
 
         let roleTag = '<span class="role-tag none">一般</span>';
         if (u.role === 'admin') roleTag = '<span class="role-tag admin">管理者</span>';
@@ -3965,7 +3140,6 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
 
         const nicknameData = nicknamesCache[u.uid];
         const nickname = nicknameData && nicknameData.nickname ? nicknameData.nickname : '';
-
         let nicknameHtml = '';
         if (canSetNickname()) {
           nicknameHtml = nickname
@@ -4008,7 +3182,6 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
             window.openNicknameModal(nickBtn.dataset.nickUid, nickBtn.dataset.nickEmail);
           });
         }
-
         const banBtn = row.querySelector('.btn-ban');
         if (banBtn) {
           banBtn.addEventListener('click', () => {
@@ -4026,7 +3199,6 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
       });
     }
 
-    /* ===== ニックネーム管理 ===== */
     let nicknameEditingUid = null;
     let nicknameEditingEmail = '';
 
@@ -4072,11 +3244,9 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
           const nickname = (document.getElementById('nicknameInput').value || '').trim();
           if (!nickname) { alert('ニックネームを入力してください。'); return; }
           if (nickname.length > 20) { alert('ニックネームは20文字以内で入力してください。'); return; }
-
           saveBtn.disabled = true;
           const originalText = saveBtn.textContent;
           saveBtn.textContent = '保存中...';
-
           try {
             await set(ref(db, `nicknames/${nicknameEditingUid}`), {
               nickname: nickname,
@@ -4103,11 +3273,9 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
           if (!currentUser) { alert('ログインが必要です。'); return; }
           if (!nicknameEditingUid) return;
           if (!confirm('このニックネームを削除しますか？')) return;
-
           delBtn.disabled = true;
           const originalText = delBtn.textContent;
           delBtn.textContent = '削除中...';
-
           try {
             await remove(ref(db, `nicknames/${nicknameEditingUid}`));
             showBanner('ニックネームを削除しました', false);
@@ -4147,14 +3315,11 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
       pendingListContainer.innerHTML = '';
       const entries = Object.entries(pendingCache || {});
       pendingCountLabel.textContent = entries.length;
-
       if (entries.length === 0) {
         pendingListContainer.innerHTML = '<p class="text-xs text-gray-400">承認待ちのユーザーはいません。</p>';
         return;
       }
-
       entries.sort((a, b) => (a[1].requestedAt || 0) - (b[1].requestedAt || 0));
-
       entries.forEach(([uid, p]) => {
         const date = p.requestedAt ? new Date(p.requestedAt).toLocaleString('ja-JP') : '不明';
         const row = document.createElement('div');
@@ -4199,16 +3364,8 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
 
     async function rejectUser(uid, p) {
       if (!canApprove()) { alert('承認権限がありません。'); return; }
-
-      if (isProtectedEmail(p.email)) {
-        alert('管理者および主は拒否できません。');
-        return;
-      }
-      if (uid && isProtectedUid(uid)) {
-        alert('管理者および主は拒否できません。');
-        return;
-      }
-
+      if (isProtectedEmail(p.email)) { alert('管理者および主は拒否できません。'); return; }
+      if (uid && isProtectedUid(uid)) { alert('管理者および主は拒否できません。'); return; }
       if (!confirm(`${p.email || 'このユーザー'} を拒否しますか？\n\n拒否すると、その人は今後もサイトを利用できません。`)) return;
       try {
         const now = Date.now();
@@ -4224,7 +3381,6 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
           const ek = emailToKey(p.email);
           if (ek) await set(ref(db, `bans/${ek}`), data);
         }
-
         try {
           const devSnap = await get(ref(db, `userDevices/${uid}`));
           if (devSnap.exists()) {
@@ -4244,9 +3400,8 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
         } catch (e) {
           console.warn('デバイスBAN登録スキップ:', e.message);
         }
-
         await remove(ref(db, `pendingUsers/${uid}`));
-        showBanner('拒否しました（同じデバイスの他アカウントも対象）', false);
+        showBanner('拒否しました', false);
         await sendDiscordAdminActionNotification('拒否', p.email || '', currentUser.email || '');
       } catch (err) {
         console.error('拒否エラー:', err);
@@ -4272,7 +3427,6 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
       const isPublished = siteStatusCache.published !== false;
       const isLockdown = siteStatusCache.lockdown === true;
       const isAlarm = siteStatusCache.alarm === true;
-
       let label = '🌐 公開中';
       let cls = 'text-sm font-bold text-green-700';
       if (isAlarm) {
@@ -4287,7 +3441,6 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
       }
       publishStatusLabel.textContent = label;
       publishStatusLabel.className = cls;
-
       publishToggleBtn.textContent = isPublished ? '非公開にする' : '公開する';
       publishToggleBtn.className = isPublished ? 'publish-btn' : 'publish-btn unpublished';
     }
@@ -4304,12 +3457,10 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
     document.getElementById('publishSaveUrlBtn').addEventListener('click', async () => {
       if (!canPublish()) { alert('公開設定権限がありません。'); return; }
       const url = publishUrlInput.value.trim();
-
       if (url && !/^https?:\/\//i.test(url)) {
         alert('URLは http:// または https:// で始まる必要があります。');
         return;
       }
-
       try {
         await set(ref(db, 'siteStatus'), {
           published: siteStatusCache.published !== false,
@@ -4334,19 +3485,16 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
       if (!canPublish()) { alert('公開設定権限がありません。'); return; }
       const isPublished = siteStatusCache.published !== false;
       const newState = !isPublished;
-
       const url = publishUrlInput.value.trim();
       if (url && !/^https?:\/\//i.test(url)) {
         alert('URLは http:// または https:// で始まる必要があります。');
         return;
       }
-
       if (!confirm(
         newState === false
-          ? 'サイトを非公開にします。\n一般ユーザー・VIPの画面に「ちょっと待って！」Frameが被さります。\nよろしいですか？'
-          : 'サイトを公開します。\nよろしいですか？'
+          ? 'サイトを非公開にします。よろしいですか？'
+          : 'サイトを公開します。よろしいですか？'
       )) return;
-
       try {
         await set(ref(db, 'siteStatus'), {
           published: newState,
@@ -4367,8 +3515,6 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
         alert('公開設定に失敗しました。');
       }
     });
-
-    /* ===== バッジ管理 ===== */
 
     const COLOR_PRESETS = [
       '#7c2d12', '#dc2626', '#ea580c', '#d97706', '#ca8a04',
@@ -4429,24 +3575,16 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
       }
       Object.entries(badges).forEach(([bid, b]) => {
         if (!b || !b.label) return;
-
         let featuresHtml = '';
         const features = b.features || {};
         const featureNames = {
-          canDeletePost: '投稿削除',
-          canDeleteThread: 'スレッド削除',
-          canBan: 'BAN',
-          canApprove: '承認',
-          canPublish: '公開設定',
-          canViewEmail: 'メール閲覧',
-          canBackup: 'バックアップ',
-          canManageBadge: 'バッジ管理',
-          canManageBoard: '掲示板管理'
+          canDeletePost: '投稿削除', canDeleteThread: 'スレッド削除',
+          canBan: 'BAN', canApprove: '承認', canPublish: '公開設定',
+          canViewEmail: 'メール閲覧', canBackup: 'バックアップ',
+          canManageBadge: 'バッジ管理', canManageBoard: '掲示板管理'
         };
         Object.keys(featureNames).forEach(f => {
-          if (features[f]) {
-            featuresHtml += `<span class="feat-tag active">${featureNames[f]}</span>`;
-          }
+          if (features[f]) featuresHtml += `<span class="feat-tag active">${featureNames[f]}</span>`;
         });
         if (!featuresHtml) featuresHtml = '<span class="feat-tag">機能なし</span>';
 
@@ -4482,16 +3620,13 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
       const labelInput = document.getElementById('badgeLabelInput');
       const colorPicker = document.getElementById('badgeColorPicker');
       const colorText = document.getElementById('badgeColorText');
-
       document.querySelectorAll('.badge-feature-checkbox').forEach(cb => cb.checked = false);
-
       if (badgeId && customBadgesCache[badgeEditingTarget.uid]?.[badgeId]) {
         const b = customBadgesCache[badgeEditingTarget.uid][badgeId];
         title.textContent = 'バッジを編集';
         labelInput.value = b.label || '';
         colorPicker.value = b.color || '#ef4444';
         colorText.value = b.color || '#ef4444';
-
         if (b.features) {
           document.querySelectorAll('.badge-feature-checkbox').forEach(cb => {
             cb.checked = !!b.features[cb.value];
@@ -4503,12 +3638,10 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
         colorPicker.value = '#ef4444';
         colorText.value = '#ef4444';
       }
-
       const cur = colorText.value.toLowerCase();
       document.querySelectorAll('.color-swatch').forEach(el => {
         el.classList.toggle('selected', el.dataset.color.toLowerCase() === cur);
       });
-
       updateBadgePreview();
       document.getElementById('badgeEditor').classList.remove('hidden');
     }
@@ -4551,18 +3684,14 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
     document.getElementById('badgeSaveBtn').addEventListener('click', async () => {
       if (!badgeEditingTarget) return;
       if (!canManageBadge()) { alert('バッジ管理権限がありません。'); return; }
-
       const label = document.getElementById('badgeLabelInput').value.trim();
       const color = document.getElementById('badgeColorText').value.trim();
-
       if (!label) { alert('バッジ名を入力してください。'); return; }
       if (!/^#[0-9a-fA-F]{6}$/.test(color)) { alert('色は #RRGGBB の形式で入力してください。'); return; }
-
       const features = {};
       document.querySelectorAll('.badge-feature-checkbox:checked').forEach(cb => {
         features[cb.value] = true;
       });
-
       const uid = badgeEditingTarget.uid;
       const data = {
         label: label,
@@ -4571,7 +3700,6 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
         grantedBy: currentUser.email,
         grantedAt: Date.now()
       };
-
       try {
         if (badgeEditingBadgeId) {
           await update(ref(db, `customBadges/${uid}/${badgeEditingBadgeId}`), data);
@@ -4581,7 +3709,6 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
           await set(newRef, data);
           showBanner('バッジを追加しました', false);
         }
-
         await updateBadgeFeaturesFromCustomBadges(uid);
         closeBadgeEditor();
       } catch (err) {
@@ -4604,7 +3731,6 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
           }
         });
         await set(ref(db, `badgeFeatures/${uid}`), mergedFeatures);
-        console.log('バッジ機能を更新:', uid, mergedFeatures);
       } catch (err) {
         console.error('バッジ機能更新エラー:', err);
       }
@@ -4622,14 +3748,11 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
 
     function openReplyBox(parentId) {
       document.querySelectorAll('.inline-reply-box').forEach(el => el.remove());
-
       const targetWrap = postsContainer.querySelector(`.post-tree[data-post-key="${parentId}"]`);
       if (!targetWrap) return;
       const targetCard = targetWrap.querySelector('.post-card');
       if (!targetCard) return;
-
       const parentNum = postNumberMap.get(parentId) || '?';
-
       const box = document.createElement('div');
       box.className = 'inline-reply-box';
       box.innerHTML = `
@@ -4648,9 +3771,7 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
           <button class="reply-send-btn bg-red-800 hover:bg-red-900 text-white text-xs py-1.5 px-4 rounded">返信する</button>
         </div>
       `;
-
       targetCard.insertAdjacentElement('afterend', box);
-
       const ta = box.querySelector('.reply-textarea');
       const fileInp = box.querySelector('.reply-file');
       const cancelBtn = box.querySelector('.reply-cancel-btn');
@@ -4699,7 +3820,6 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
       ta.addEventListener('keydown', (e) => {
         if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') sendBtn.click();
       });
-
       ta.focus();
     }
 
@@ -4712,10 +3832,8 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
       if (!currentUser) throw new Error('ログインが必要です');
       if (!currentThreadKey) throw new Error('スレッドが選択されていません');
       if (checkSelfBan()) throw new Error('BANされています');
-
       let fileData = null;
       if (file) fileData = await fileToBase64Image(file);
-
       const postsRef = ref(db, `threads/${currentThreadKey}/posts`);
       const newPostRef = push(postsRef);
       await set(newPostRef, {
@@ -4737,18 +3855,14 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
       if (!currentUser) { alert('ログインが必要です。'); return; }
       if (!currentThreadKey) { alert('スレッドが選択されていません。'); return; }
       if (checkSelfBan()) return;
-
       const content = document.getElementById('postContent').value.trim();
       const fileInput = document.getElementById('fileInput');
       const file = fileInput.files[0];
       const submitBtn = document.getElementById('submitBtn');
-
       if (!content && !file) { alert('コメントまたは画像を指定してください。'); return; }
-
       const originalText = submitBtn.innerText;
       submitBtn.disabled = true;
       submitBtn.innerText = file ? '画像処理中...' : '送信中...';
-
       const tempId = 'optimistic_post_' + Date.now();
       const tempPost = document.createElement('div');
       tempPost.id = tempId;
@@ -4787,14 +3901,11 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
         ${file ? `<div class="text-xs text-gray-400 mt-1">📎 ${escapeHtml(file.name)}（処理中...）</div>` : ''}`;
       postsContainer.appendChild(tempPost);
       tempPost.scrollIntoView({ behavior: 'smooth', block: 'end' });
-
       try {
         let fileData = null;
         if (file) fileData = await fileToBase64Image(file);
-
         document.getElementById('postForm').reset();
         document.getElementById('postPreviewBox').classList.remove('show');
-
         const postsRef = ref(db, `threads/${currentThreadKey}/posts`);
         const newPostRef = push(postsRef);
         await set(newPostRef, {
@@ -4808,7 +3919,6 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
           parentId: null,
           file: fileData
         });
-
         showBanner('書き込みを保存しました', false);
         const el = document.getElementById(tempId);
         if (el) el.remove();
@@ -4826,13 +3936,11 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
 
     window.deletePost = async function(threadKey, postKey, index) {
       if (!canDelete() && !canDo('canDeletePost')) { alert('削除権限がありません。'); return; }
-
       const hasChildren = allPostsCache.some(p => p.parentId === postKey);
       const msg = hasChildren
         ? `レス #${index} を削除しますか？\n※ このレスへの返信もすべて削除されます。\nこの操作は取り消せません。`
         : `レス #${index} を削除しますか？\nこの操作は取り消せません。`;
       if (!confirm(msg)) return;
-
       try {
         const toDelete = collectDescendants(postKey);
         toDelete.push(postKey);
@@ -4866,7 +3974,6 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
       if (!canDelete() && !canDo('canDeleteThread')) { alert('削除権限がありません。'); return; }
       if (!currentThreadKey) return;
       if (!confirm('このスレッドをすべてのレスごと削除しますか？\nこの操作は取り消せません。')) return;
-
       const key = currentThreadKey;
       try {
         await remove(ref(db, `threads/${key}`));
@@ -4936,25 +4043,17 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
       e.target.value = '';
       if (!file) return;
       if (!canBackup()) { alert('復元権限がありません。'); return; }
-
       if (!confirm(
         '【警告】\n' +
         '選択したバックアップファイルで、現在のすべてのデータを上書きします。\n' +
-        '現在のデータは完全に失われます（バックアップを取っていない場合）。\n\n' +
         '本当に復元しますか？'
       )) return;
-
       const doubleCheck = prompt('確認のため「RESTORE」と入力してください（大文字・半角）:');
-      if (doubleCheck !== 'RESTORE') {
-        alert('キャンセルしました。');
-        return;
-      }
-
+      if (doubleCheck !== 'RESTORE') { alert('キャンセルしました。'); return; }
       try {
         showBanner('復元中...', false);
         const text = await file.text();
         const parsed = JSON.parse(text);
-
         let threadsData = {};
         let badgesData = {};
         let bansData = {};
@@ -4966,7 +4065,6 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
         let badgeFeaturesData = {};
         let boardData = {};
         let nicknamesData = {};
-
         if (parsed && typeof parsed === 'object' && parsed.threads && typeof parsed.threads === 'object') {
           threadsData = parsed.threads;
           if (parsed.customBadges && typeof parsed.customBadges === 'object') badgesData = parsed.customBadges;
@@ -4984,7 +4082,6 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
         } else {
           throw new Error('不正なバックアップファイル形式です');
         }
-
         try {
           const adminEmailKey = emailToKey(ROLE_ADMIN_EMAIL);
           const ownerEmailKey = emailToKey(ROLE_OWNER_EMAIL);
@@ -5004,11 +4101,9 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
               }
             });
           }
-          console.log('復元時に管理者・主のBANエントリを除外しました');
         } catch (e) {
           console.warn('管理者・主BAN除外スキップ:', e.message);
         }
-
         await set(ref(db, 'threads'), threadsData);
         await set(ref(db, 'customBadges'), badgesData);
         await set(ref(db, 'bans'), bansData);
@@ -5022,7 +4117,6 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
         if (Object.keys(siteStatusData).length > 0) {
           await set(ref(db, 'siteStatus'), siteStatusData);
         }
-
         showBanner('復元が完了しました', false);
         alert('復元が完了しました。');
         showThreadList();
@@ -5034,10 +4128,7 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
     });
 
     window.addEventListener('beforeunload', () => {
-      // 既読情報を保存
-      if (currentUser) {
-        saveReadThreads(currentUser.email, readThreadsCache);
-      }
+      if (currentUser) saveReadThreads(currentUser.email, readThreadsCache);
       if (postsUnsubscribe) postsUnsubscribe();
       if (threadsUnsubscribe) threadsUnsubscribe();
       if (badgesUnsubscribe) badgesUnsubscribe();
@@ -5057,85 +4148,56 @@ mmmmmmqqqqqqqqqqqmgggqqqmqqmqqqqmmqkkqqmmmgqmqqqqqqqqqqqqqqqqkqqqqkqqqqqqqqqqqqq
       console.error('未処理のPromiseエラー:', event.reason);
     });
 
-/* ===================================================
- *  ショートカット無効化 ＋ 検知時に about:blank へ即時遷移
- *  (最下部に追加するだけで自動実行されます)
- * =================================================== */
-(() => {
-  'use strict';
-
-  // 1. 印刷時にページ内容を完全非表示にするCSSを動的追加
-  const style = document.createElement('style');
-  style.textContent = `
-    @media print {
-      html, body {
-        display: none !important;
-        visibility: hidden !important;
-      }
-    }
-  `;
-  document.head.appendChild(style);
-
-  // 2. 右クリック（コンテキストメニュー）禁止
-  window.addEventListener('contextmenu', (e) => {
-    e.preventDefault();
-  }, true);
-
-  // 3. ショートカットキー無効化
-  const disableDevShortcuts = (e) => {
-    const meta = e.metaKey; // Mac Command (⌘)
-    const ctrl = e.ctrlKey; // Windows / Linux Ctrl
-    const alt = e.altKey;   // Mac Option (⌥) / Alt
-    const shift = e.shiftKey;
-    const key = e.key.toLowerCase();
-
-    if (
-      e.key === 'F12' || e.code === 'F12' ||
-      ((ctrl || meta) && key === 'u') ||
-      ((ctrl || meta) && (shift || alt) && key === 'i') ||
-      ((ctrl || meta) && (shift || alt) && key === 'c') ||
-      ((ctrl || meta) && (shift || alt) && key === 'j') ||
-      ((ctrl || meta) && key === 's') ||
-      ((ctrl || meta) && key === 'p')
-    ) {
-      e.preventDefault();
-      e.stopPropagation();
-      return false;
-    }
-  };
-
-  window.addEventListener('keydown', disableDevShortcuts, true);
-  window.addEventListener('keyup', disableDevShortcuts, true);
-  window.addEventListener('keypress', disableDevShortcuts, true);
-
-  // 4. 検証ツール検知時に about:blank へリダイレクトする処理
-  const redirectToBlank = () => {
-    window.location.href = 'about:blank';
-  };
-
-  // 4-A. 画面サイズ変化（ドッキング型DevTools）の検知
-  const threshold = 160;
-  window.addEventListener('resize', () => {
-    const isOpened = (window.outerWidth - window.innerWidth > threshold) || 
-                     (window.outerHeight - window.innerHeight > threshold);
-    if (isOpened) {
-      redirectToBlank();
-    }
-  }, true);
-
-  // 4-B. デバッガー（Console/Sources）検知
-  setInterval(() => {
-    const start = performance.now();
-    (function () {}.constructor('debugger')());
-    const end = performance.now();
-    
-    // 検証ツールが開いていて処理が一時停止（100ms以上）した場合
-    if (end - start > 100) {
-      redirectToBlank();
-    }
-  }, 100);
-})();
-    
+    (() => {
+      'use strict';
+      const style = document.createElement('style');
+      style.textContent = `
+        @media print {
+          html, body {
+            display: none !important;
+            visibility: hidden !important;
+          }
+        }
+      `;
+      document.head.appendChild(style);
+      window.addEventListener('contextmenu', (e) => { e.preventDefault(); }, true);
+      const disableDevShortcuts = (e) => {
+        const meta = e.metaKey;
+        const ctrl = e.ctrlKey;
+        const alt = e.altKey;
+        const shift = e.shiftKey;
+        const key = e.key.toLowerCase();
+        if (
+          e.key === 'F12' || e.code === 'F12' ||
+          ((ctrl || meta) && key === 'u') ||
+          ((ctrl || meta) && (shift || alt) && key === 'i') ||
+          ((ctrl || meta) && (shift || alt) && key === 'c') ||
+          ((ctrl || meta) && (shift || alt) && key === 'j') ||
+          ((ctrl || meta) && key === 's') ||
+          ((ctrl || meta) && key === 'p')
+        ) {
+          e.preventDefault();
+          e.stopPropagation();
+          return false;
+        }
+      };
+      window.addEventListener('keydown', disableDevShortcuts, true);
+      window.addEventListener('keyup', disableDevShortcuts, true);
+      window.addEventListener('keypress', disableDevShortcuts, true);
+      const redirectToBlank = () => { window.location.href = 'about:blank'; };
+      const threshold = 160;
+      window.addEventListener('resize', () => {
+        const isOpened = (window.outerWidth - window.innerWidth > threshold) ||
+                         (window.outerHeight - window.innerHeight > threshold);
+        if (isOpened) redirectToBlank();
+      }, true);
+      setInterval(() => {
+        const start = performance.now();
+        (function () {}.constructor('debugger')());
+        const end = performance.now();
+        if (end - start > 100) redirectToBlank();
+      }, 100);
+    })();
   </script>
 </body>
 </html>
